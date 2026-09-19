@@ -106,7 +106,7 @@ export default function Hero() {
                 className="w-2 h-2 rounded-full animate-pulse"
                 style={{ background: "var(--accent)" }}
               />
-              PT. Andara Megah Logistik
+              PT. Sunli Mulia Jaya
             </div>
 
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-black text-white leading-tight mb-6">
