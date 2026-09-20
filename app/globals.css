@@ -2,9 +2,9 @@
 
 @layer base {
   :root {
-    --primary: #1a3c6e;
+    --primary: #122339;
     --primary-dark: #122b50;
-    --accent: #ff6700; 
+    --accent: #F8B102; 
     --accent-light: #f5c060;
     --text-dark: #1a1a2e;
     --text-muted: #6b7280;

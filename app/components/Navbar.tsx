@@ -33,8 +33,8 @@ const layananMenu = [
    Ganti path sesuai icon milik kamu
 ========================================================= */
 
-const MOBILE_MENU_ICON = "/icons/navbar/menu.png";
-const MOBILE_CLOSE_ICON = "/icons/navbar/close.png";
+const MOBILE_MENU_ICON = "/icons/navbar/open-menu.png";
+const MOBILE_CLOSE_ICON = "/icons/navbar/cross-button.png";
 
 /* Ukuran icon mobile - silakan ubah */
 const MOBILE_ICON_SIZE = 28;
@@ -72,7 +72,7 @@ export default function Navbar() {
         scrolled ? "bg-white navbar-scrolled" : "bg-white/95 backdrop-blur-sm"
       }`}
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-1">
         <div className="flex items-center justify-between h-20">
           {/* =================================================
               LOGO
@@ -80,11 +80,11 @@ export default function Navbar() {
 
           <Link href="/" className="flex items-center">
             <Image
-              src="/images/Logo1.png"
+              src="/images/sunlimullogo2.png"
               alt="Logo"
-              width={120}
-              height={120}
-              className="object-contain transition-transform duration-300 hover:scale-110"
+              width={90}
+              height={90}
+              className="object-contain transition-transform duration-300 scale-100 hover:scale-105"
               priority
             />
           </Link>
@@ -103,7 +103,7 @@ export default function Navbar() {
               <Link
                 key={item.href}
                 href={item.href}
-                className={`px-4 py-2 rounded-lg text-sm font-semibold transition-all ${
+                className={`px-4 py-2 rounded-full text-sm font-semibold transition-all ${
                   isActive(item.href)
                     ? "text-white"
                     : "text-gray-700 hover:text-white hover:bg-blue-800"
@@ -129,7 +129,7 @@ export default function Navbar() {
 
               <button
                 type="button"
-                className={`px-4 py-2 rounded-lg text-sm font-semibold transition-all duration-300 flex items-center gap-1 ${
+                className={`px-4 py-2 rounded-full text-sm font-semibold transition-all duration-300 flex items-center gap-1 ${
                   layananOpen || isLayananActive
                     ? "text-white"
                     : "text-gray-700 hover:text-white hover:bg-blue-800"
@@ -212,7 +212,7 @@ export default function Navbar() {
               <Link
                 key={item.href}
                 href={item.href}
-                className={`px-4 py-2 rounded-lg text-sm font-semibold transition-all ${
+                className={`px-4 py-2 rounded-full text-sm font-semibold transition-all ${
                   isActive(item.href)
                     ? "text-white"
                     : "text-gray-700 hover:text-white hover:bg-blue-800"
@@ -233,10 +233,7 @@ export default function Navbar() {
               href="https://api.whatsapp.com/send?phone=6281356563676"
               target="_blank"
               rel="noopener noreferrer"
-              className="ml-3 px-5 py-2.5 rounded-lg text-sm font-bold text-white transition-all hover:opacity-90 hover:scale-105"
-              style={{
-                background: "var(--accent)",
-              }}
+              className="ml-3 px-5 py-2.5 rounded-full text-sm font-bold text-white transition-all hover:opacity-90 hover:scale-105 shadow-lg bg-linear-to-r from-[#ECA316] to-[#FF6700]"
             >
               Hubungi Kami
             </a>

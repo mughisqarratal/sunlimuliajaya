@@ -33,22 +33,22 @@ const heroImages = [
 
 const heroIcons = [
   {
-    icon: "/icons/heroicons/experts.png",
+    icon: "/icons/heroicons/credibility.png",
     label: "Berpengalaman",
     desc: "Lebih dari beberapa tahun.",
   },
   {
-    icon: "/icons/heroicons/countries.png",
+    icon: "/icons/heroicons/global.png",
     label: "Jaringan Luas",
     desc: "Melayani berbagai negara.",
   },
   {
-    icon: "/icons/heroicons/relationship.png",
+    icon: "/icons/heroicons/trade.png",
     label: "Terpercaya",
     desc: "Layanan jangka panjang.",
   },
   {
-    icon: "/icons/heroicons/growth.png",
+    icon: "/icons/heroicons/sales.png",
     label: "Harga Bersaing",
     desc: "Harga kompetitif di pasar.",
   },
@@ -68,23 +68,36 @@ export default function Hero() {
   return (
     <section
       className="relative min-h-screen flex items-center overflow-hidden"
-      style={{ background: "var(--primary-dark)" }}
+      style={{ background: "#0B131F" }} // Dark Navy modern
     >
-      {/* Background pattern */}
-      <div className="absolute inset-0 overflow-hidden">
+      {/* =========================================================
+          DESAIN PATTERN BARU (Glow Mesh & Modern Grid Dots)
+         ========================================================= */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        {/* Soft Ambient Light Glows */}
         <div
-          className="absolute inset-0 opacity-10"
+          className="absolute -top-[20%] -left-[10%] w-[500px] h-[500px] rounded-full blur-[120px] opacity-25"
+          style={{ background: "#ECA316" }}
+        />
+        <div
+          className="absolute top-[40%] -right-[10%] w-[600px] h-[600px] rounded-full blur-[140px] opacity-20"
+          style={{ background: "#1E40AF" }}
+        />
+
+        {/* Modern Dot Grid Pattern */}
+        <div
+          className="absolute inset-0 opacity-20"
           style={{
-            backgroundImage:
-              "radial-gradient(circle at 25% 25%, #e8a020 0%, transparent 50%), radial-gradient(circle at 75% 75%, #1a6cde 0%, transparent 50%)",
+            backgroundImage: `radial-gradient(rgba(255, 255, 255, 0.4) 1px, transparent 1px)`,
+            backgroundSize: "28px 28px",
           }}
         />
 
+        {/* Diagonal Subtle Lines Overlay */}
         <div
-          className="absolute inset-0"
+          className="absolute inset-0 opacity-10"
           style={{
-            backgroundImage:
-              "url(\"data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E\")",
+            backgroundImage: `repeating-linear-gradient(45deg, #ffffff 0, #ffffff 1px, transparent 0, transparent 40px)`,
           }}
         />
       </div>
@@ -98,20 +111,21 @@ export default function Hero() {
             <div
               className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-semibold mb-6"
               style={{
-                background: "rgba(232,160,32,0.15)",
-                color: "var(--accent)",
+                background: "rgba(236, 163, 22, 0.15)",
+                color: "#ECA316",
               }}
             >
               <span
                 className="w-2 h-2 rounded-full animate-pulse"
-                style={{ background: "var(--accent)" }}
+                style={{ background: "#ECA316" }}
               />
               PT. Sunli Mulia Jaya
             </div>
 
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-black text-white leading-tight mb-6">
-              Smart Solution for{" "}
-              <span style={{ color: "#FF6700" }}>International</span> Shipping
+              Import Export{" "}
+              <span style={{ color: "var(--accent)" }}>Global</span>{" "}
+              Solution
             </h1>
 
             <p className="text-gray-300 text-lg leading-relaxed mb-8 max-w-xl">
@@ -124,8 +138,7 @@ export default function Hero() {
             <div className="flex flex-wrap gap-4 mb-12">
               <Link
                 href="/kontak"
-                className="px-8 py-4 rounded-xl font-bold text-white text-sm transition-all hover:opacity-90 hover:scale-105 shadow-lg"
-                style={{ background: "var(--accent)" }}
+                className="px-5 py-2.5 rounded-full font-bold text-white text-sm transition-all hover:opacity-90 hover:scale-105 shadow-lg bg-linear-to-r from-[#ECA316] to-[#FF6700]"
               >
                 Konsultasi Gratis
               </Link>
