@@ -3,7 +3,7 @@
 export default function WhatsAppButton() {
   return (
     <a
-      href="https://api.whatsapp.com/send?phone=6281356563676&text=Halo,%20saya%20ingin%20bertanya%20tentang%20layanan%20Andara%20Cargo"
+      href="https://api.whatsapp.com/send?phone=6282240041229&text=Halo,%20saya%20ingin%20bertanya%20tentang%20layanan%20Andara%20Cargo"
       target="_blank"
       rel="noopener noreferrer"
       style={{

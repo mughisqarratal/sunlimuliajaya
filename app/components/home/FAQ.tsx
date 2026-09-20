@@ -245,7 +245,7 @@ export default function FAQ() {
         {!showAll && (
           <div className="lg:hidden relative mt-0">
             {/* Gradasi di bagian bawah FAQ */}
-            <div className="absolute left-0 right-0 bottom-14 h-24 bg-gradient-to-t from-white via-white/90 to-transparent pointer-events-none" />
+            <div className="absolute left-0 right-0 bottom-14 h-24 bg-linear-to-t from-white via-white/90 to-transparent pointer-events-none" />
 
             <div className="relative pt-8 flex justify-center">
               <button
@@ -353,7 +353,7 @@ function FAQItem({
         <div className="flex items-start gap-3">
           {/* Nomor FAQ */}
           <span
-            className={`flex-shrink-0 w-8 h-8 rounded-lg flex items-center justify-center text-xs font-bold transition-all duration-300 ${
+            className={`shrink-0 w-8 h-8 rounded-lg flex items-center justify-center text-xs font-bold transition-all duration-300 ${
               isOpen
                 ? "text-white"
                 : "text-gray-600 bg-gray-100 group-hover:text-white"
@@ -375,7 +375,7 @@ function FAQItem({
 
         {/* Icon plus / minus */}
         <span
-          className={`flex-shrink-0 w-7 h-7 rounded-full flex items-center justify-center transition-all duration-300 ${
+          className={`shrink-0 w-7 h-7 rounded-full flex items-center justify-center transition-all duration-300 ${
             isOpen ? "text-white rotate-0" : "bg-gray-100 text-gray-500"
           }`}
           style={isOpen ? { background: "var(--primary)" } : undefined}
@@ -436,7 +436,7 @@ function FAQItem({
                     className="flex items-start gap-2 text-sm text-gray-600 leading-6"
                   >
                     <span
-                      className="mt-2 w-1.5 h-1.5 rounded-full flex-shrink-0"
+                      className="mt-2 w-1.5 h-1.5 rounded-full shrink-0"
                       style={{ background: "var(--primary)" }}
                     />
 

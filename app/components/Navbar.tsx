@@ -230,7 +230,7 @@ export default function Navbar() {
             ================================================= */}
 
             <a
-              href="https://api.whatsapp.com/send?phone=6281356563676"
+              href="https://api.whatsapp.com/send?phone=6282240041229"
               target="_blank"
               rel="noopener noreferrer"
               className="ml-3 px-5 py-2.5 rounded-full text-sm font-bold text-white transition-all hover:opacity-90 hover:scale-105 shadow-lg bg-linear-to-r from-[#ECA316] to-[#FF6700]"

@@ -76,11 +76,11 @@ export default function Hero() {
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         {/* Soft Ambient Light Glows */}
         <div
-          className="absolute -top-[20%] -left-[10%] w-[500px] h-[500px] rounded-full blur-[120px] opacity-25"
+          className="absolute top-[-20%] left-[-10%] w-125 h-125 rounded-full blur-[120px] opacity-25"
           style={{ background: "#ECA316" }}
         />
         <div
-          className="absolute top-[40%] -right-[10%] w-[600px] h-[600px] rounded-full blur-[140px] opacity-20"
+          className="absolute top-[40%] right-[-10%] w-150 h-150 rounded-full blur-[140px] opacity-20"
           style={{ background: "#1E40AF" }}
         />
 
@@ -176,7 +176,7 @@ export default function Hero() {
           <div className="w-full">
             <div className="relative w-full max-w-xl mx-auto">
               {/* Image */}
-              <div className="relative aspect-[4/3] overflow-hidden rounded-3xl shadow-2xl border border-white/10">
+              <div className="relative aspect-4/3 overflow-hidden rounded-3xl shadow-2xl border border-white/10">
                 {heroImages.map((image, index) => (
                   <Image
                     key={image.src}
@@ -194,7 +194,7 @@ export default function Hero() {
                 ))}
 
                 {/* Dark overlay */}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent" />
+                <div className="absolute inset-0 bg-linear-to-t from-black/50 via-transparent to-transparent" />
 
                 {/* Floating label */}
                 <div className="absolute left-5 bottom-5 right-5">

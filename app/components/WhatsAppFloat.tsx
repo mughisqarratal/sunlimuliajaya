@@ -1,7 +1,7 @@
 export default function WhatsAppFloat() {
   return (
     <a
-      href="https://api.whatsapp.com/send?phone=6281356563676"
+      href="https://api.whatsapp.com/send?phone=6282240041229"
       target="_blank"
       rel="noopener noreferrer"
       className="whatsapp-float w-14 h-14 rounded-full flex items-center justify-center text-white shadow-lg hover:scale-110 transition-transform"
