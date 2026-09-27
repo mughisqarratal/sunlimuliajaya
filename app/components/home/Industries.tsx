@@ -6,7 +6,7 @@ import "../industries.css";
 const industries = [
   {
     id: "besi",
-    iconSrc: "/icons/industries/steel.png",
+    iconSrc: "/icons/industries/besi.png",
     iconEmoji: null,
     title: "Besi Baja",
     short: "Import untuk Industri & Konstruksi",
@@ -16,7 +16,7 @@ const industries = [
   },
   {
     id: "elektronik",
-    iconSrc: "/icons/industries/devices.png",
+    iconSrc: "/icons/industries/elektronik.png",
     iconEmoji: null,
     title: "Elektronik",
     short: "Smartphone, Laptop, TV & Peralatan Elektronik",
@@ -26,7 +26,7 @@ const industries = [
   },
   {
     id: "otomotif",
-    iconSrc: "/icons/industries/brake.png",
+    iconSrc: "/icons/industries/otomotiv.png",
     iconEmoji: null,
     title: "Otomotif",
     short: "Mobil, Motor & Suku Cadang",
@@ -36,7 +36,7 @@ const industries = [
   },
   {
     id: "pakaian",
-    iconSrc: "/icons/industries/shirt.png",
+    iconSrc: "/icons/industries/tekstil.png",
     iconEmoji: null,
     title: "Pakaian & Tekstil",
     short: "Pakaian, Sepatu, Tas & Bahan Tekstil",
@@ -46,7 +46,7 @@ const industries = [
   },
   {
     id: "makanan",
-    iconSrc: "/icons/industries/food.png",
+    iconSrc: "/icons/industries/makanan.png",
     iconEmoji: null,
     title: "Makanan & Minuman",
     short: "Produk Pangan Import",
@@ -56,7 +56,7 @@ const industries = [
   },
   {
     id: "mesin",
-    iconSrc: "/icons/industries/lathe.png",
+    iconSrc: "/icons/industries/mesin.png",
     iconEmoji: null,
     title: "Mesin & Peralatan",
     short: "Mesin Industri & Peralatan Konstruksi",
@@ -66,7 +66,7 @@ const industries = [
   },
   {
     id: "furnitur",
-    iconSrc: "/icons/industries/furniture.png",
+    iconSrc: "/icons/industries/furnitur.png",
     iconEmoji: null,
     title: "Furnitur & Dekorasi",
     short: "Furnitur, Dekorasi Rumah & Perlengkapan",
@@ -76,7 +76,7 @@ const industries = [
   },
   {
     id: "bahan-baku",
-    iconSrc: "/icons/industries/raw-material.png",
+    iconSrc: "/icons/industries/bahan.png",
     iconEmoji: null,
     title: "Bahan Baku",
     short: "Bahan Kimia, Logam & Plastik",

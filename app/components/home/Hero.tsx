@@ -124,8 +124,7 @@ export default function Hero() {
 
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-black text-white leading-tight mb-6">
               Import Export{" "}
-              <span style={{ color: "var(--accent)" }}>Global</span>{" "}
-              Solution
+              <span style={{ color: "var(--accent)" }}>Global</span> Solution
             </h1>
 
             <p className="text-gray-300 text-lg leading-relaxed mb-8 max-w-xl">

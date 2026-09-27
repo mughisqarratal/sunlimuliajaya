@@ -4,7 +4,7 @@ import Image from "next/image";
 export const metadata: Metadata = {
   title: "Profil Perusahaan - Andara Cargo",
   description:
-    "PT. Andara Megah Logistik - Mitra terpercaya layanan import export internasional Anda.",
+    "PT. Sunli Mulia Jaya - Mitra terpercaya layanan import export internasional Anda.",
 };
 
 // Data Statistik / Info Singkat Perusahaan
@@ -126,7 +126,7 @@ export default function ProfilPage() {
             Profil Perusahaan
           </h1>
           <p className="text-blue-200 text-lg max-w-2xl mx-auto">
-            PT. Andara Megah Logistik — Mitra terpercaya Anda dalam layanan
+            PT. Sunli Mulia Jaya — Mitra terpercaya Anda dalam layanan
             import export internasional
           </p>
         </div>
@@ -147,7 +147,7 @@ export default function ProfilPage() {
                 className="text-3xl font-black mt-2 mb-6"
                 style={{ color: "var(--primary)" }}
               >
-                PT. Andara Megah Logistik
+                PT. Sunli Mulia Jaya
               </h2>
               <div className="space-y-4 text-gray-600 leading-relaxed">
                 <p>

@@ -33,14 +33,14 @@ function CountUp({ end, duration = 2000 }: { end: number; duration?: number }) {
 const stats = [
   {
     label: "Import",
-    imageSrc: "/icons/import.png",
+    imageSrc: "/icons/masuk.png",
     value: 10000,
     suffix: "+",
     desc: "Shipment berhasil",
   },
   {
     label: "Export",
-    imageSrc: "/icons/exportation.png",
+    imageSrc: "/icons/export.png",
     value: 840,
     suffix: "+",
     desc: "Shipment berhasil",
@@ -48,14 +48,14 @@ const stats = [
   },
   {
     label: "Door to Door",
-    imageSrc: "/icons/doortodoor.png",
+    imageSrc: "/icons/door.png",
     value: 6200,
     suffix: "+",
     desc: "Pengiriman selesai",
   },
   {
     label: "Klien Puas",
-    imageSrc: "/icons/satisfaction.png",
+    imageSrc: "/icons/klientpuas.png",
     value: 500,
     suffix: "+",
     desc: "Di seluruh Indonesia",

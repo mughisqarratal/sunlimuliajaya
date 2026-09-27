@@ -299,7 +299,7 @@ export default function WhyUs() {
               }}
             >
               {" "}
-              PT. Andara Megah Logistik
+              PT. Sunli Mulia Jaya
             </strong>{" "}
             memberikan Service terbaik untuk
             meningkatkan keuntungan Anda.

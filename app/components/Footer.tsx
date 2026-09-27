@@ -23,7 +23,7 @@ export default function Footer() {
               </Link>
             </div>
             <p className="text-gray-400 text-sm leading-relaxed mb-5">
-              "Smart Solution for International Shipping"
+              "Import Export Global Solution"
             </p>
             <div className="flex gap-3 items-center justify-center">
               <a

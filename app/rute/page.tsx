@@ -22,8 +22,8 @@ const routes = [
     transit: "7-14 hari",
     type: "Sea & Air",
 
-    transitIcon: "/images/routes/icons/calendar.png",
-    typeIcon: "/images/routes/icons/transportation.png",
+    transitIcon: "/images/routes/icons/kalender.png",
+    typeIcon: "/images/routes/icons/type.png",
 
     transitIconSize: 24,
     typeIconSize: 24,
@@ -41,8 +41,8 @@ const routes = [
     transit: "5-10 hari",
     type: "Sea & Air",
 
-    transitIcon: "/images/routes/icons/calendar.png",
-    typeIcon: "/images/routes/icons/transportation.png",
+    transitIcon: "/images/routes/icons/kalender.png",
+    typeIcon: "/images/routes/icons/type.png",
 
     transitIconSize: 24,
     typeIconSize: 24,
@@ -60,8 +60,8 @@ const routes = [
     transit: "5-10 hari",
     type: "Sea & Air",
 
-    transitIcon: "/images/routes/icons/calendar.png",
-    typeIcon: "/images/routes/icons/transportation.png",
+    transitIcon: "/images/routes/icons/kalender.png",
+    typeIcon: "/images/routes/icons/type.png",
 
     transitIconSize: 24,
     typeIconSize: 24,
@@ -79,8 +79,8 @@ const routes = [
     transit: "15-25 hari",
     type: "Sea & Air",
 
-    transitIcon: "/images/routes/icons/calendar.png",
-    typeIcon: "/images/routes/icons/transportation.png",
+    transitIcon: "/images/routes/icons/kalender.png",
+    typeIcon: "/images/routes/icons/type.png",
 
     transitIconSize: 24,
     typeIconSize: 24,
@@ -93,13 +93,13 @@ const routes = [
     imageSrc: "/images/routes/unieropa.jpg",
     flag: "🇪🇺",
 
-    cities: ["Jerman", "Belanda", "Italia", "Prancis", "UK", "Polandia"],
+    cities: ["Jerman", "Belanda", "Italia", "Prancis", "Polandia"],
 
     transit: "20-30 hari",
     type: "Sea & Air",
 
-    transitIcon: "/images/routes/icons/calendar.png",
-    typeIcon: "/images/routes/icons/transportation.png",
+    transitIcon: "/images/routes/icons/kalender.png",
+    typeIcon: "/images/routes/icons/type.png",
 
     transitIconSize: 24,
     typeIconSize: 24,
@@ -117,8 +117,8 @@ const routes = [
     transit: "3-7 hari",
     type: "Sea & Air",
 
-    transitIcon: "/images/routes/icons/calendar.png",
-    typeIcon: "/images/routes/icons/transportation.png",
+    transitIcon: "/images/routes/icons/kalender.png",
+    typeIcon: "/images/routes/icons/type.png",
 
     transitIconSize: 24,
     typeIconSize: 24,
@@ -136,8 +136,8 @@ const routes = [
     transit: "3-5 hari",
     type: "Sea & Air",
 
-    transitIcon: "/images/routes/icons/calendar.png",
-    typeIcon: "/images/routes/icons/transportation.png",
+    transitIcon: "/images/routes/icons/kalender.png",
+    typeIcon: "/images/routes/icons/type.png",
 
     transitIconSize: 24,
     typeIconSize: 24,
@@ -155,8 +155,8 @@ const routes = [
     transit: "5-10 hari",
     type: "Sea & Air",
 
-    transitIcon: "/images/routes/icons/calendar.png",
-    typeIcon: "/images/routes/icons/transportation.png",
+    transitIcon: "/images/routes/icons/kalender.png",
+    typeIcon: "/images/routes/icons/type.png",
 
     transitIconSize: 24,
     typeIconSize: 24,
@@ -174,8 +174,8 @@ const routes = [
     transit: "10-20 hari",
     type: "Sea & Air",
 
-    transitIcon: "/images/routes/icons/calendar.png",
-    typeIcon: "/images/routes/icons/transportation.png",
+    transitIcon: "/images/routes/icons/kalender.png",
+    typeIcon: "/images/routes/icons/type.png",
 
     transitIconSize: 24,
     typeIconSize: 24,
@@ -193,8 +193,8 @@ const routes = [
     transit: "10-18 hari",
     type: "Sea & Air",
 
-    transitIcon: "/images/routes/icons/calendar.png",
-    typeIcon: "/images/routes/icons/transportation.png",
+    transitIcon: "/images/routes/icons/kalender.png",
+    typeIcon: "/images/routes/icons/type.png",
 
     transitIconSize: 24,
     typeIconSize: 24,
@@ -212,8 +212,8 @@ const routes = [
     transit: "5-10 hari",
     type: "Sea & Air",
 
-    transitIcon: "/images/routes/icons/calendar.png",
-    typeIcon: "/images/routes/icons/transportation.png",
+    transitIcon: "/images/routes/icons/kalender.png",
+    typeIcon: "/images/routes/icons/type.png",
 
     transitIconSize: 24,
     typeIconSize: 24,
@@ -231,8 +231,8 @@ const routes = [
     transit: "5-8 hari",
     type: "Sea & Air",
 
-    transitIcon: "/images/routes/icons/calendar.png",
-    typeIcon: "/images/routes/icons/transportation.png",
+    transitIcon: "/images/routes/icons/kalender.png",
+    typeIcon: "/images/routes/icons/type.png",
 
     transitIconSize: 24,
     typeIconSize: 24,
@@ -247,22 +247,22 @@ const routes = [
 
 const stats = [
   {
-    imageSrc: "/icons/countries.png",
+    imageSrc: "/icons/global.png",
     value: "50+",
     label: "Negara Tujuan",
   },
   {
-    imageSrc: "/icons/harbor.png",
+    imageSrc: "/icons/pelabuhan.png",
     value: "100+",
     label: "Pelabuhan",
   },
   {
-    imageSrc: "/icons/airport.png",
+    imageSrc: "/icons/bandara.png",
     value: "30+",
     label: "Bandara",
   },
   {
-    imageSrc: "/icons/support.png",
+    imageSrc: "/icons/cs.png",
     value: "24/7",
     label: "Support",
   },

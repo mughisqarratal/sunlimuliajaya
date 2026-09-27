@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const services = [
   {
-    iconSrc: "/icons/doortodoor.png",
+    iconSrc: "/icons/door.png",
     title: "Door to Door Import",
     desc: "Layanan pengiriman langsung dari gudang pengirim ke tangan penerima tanpa repot urus logistik.",
     href: "/layanan/door-to-door",
@@ -11,7 +11,7 @@ const services = [
     bgSrc: "/images/services/doortodoor.png",
   },
   {
-    iconSrc: "/icons/customclearance.png",
+    iconSrc: "/icons/custom.png",
     title: "Custom Clearance",
     desc: "Pengurusan bea cukai secara profesional dan cepat untuk kelancaran proses impor barang Anda.",
     href: "/layanan/custom-clearance",
@@ -19,7 +19,7 @@ const services = [
     bgSrc: "/images/services/customs.png",
   },
   {
-    iconSrc: "/icons/air.png",
+    iconSrc: "/icons/cargoudara.png",
     title: "Air Freight Service",
     desc: "Pengiriman via udara untuk kebutuhan yang memerlukan kecepatan dan ketepatan waktu.",
     href: "/layanan/air-freight",
@@ -27,7 +27,7 @@ const services = [
     bgSrc: "/images/services/air.png",
   },
   {
-    iconSrc: "/icons/sea.png",
+    iconSrc: "/icons/cargo-ship.png",
     title: "Sea Freight",
     desc: "Pengiriman via laut dengan kapasitas besar dan biaya yang lebih efisien untuk kebutuhan volume tinggi.",
     href: "/layanan/sea-freight",
@@ -35,7 +35,7 @@ const services = [
     bgSrc: "/images/services/sea.png",
   },
   {
-    iconSrc: "/icons/box.png",
+    iconSrc: "/icons/kotak.png",
     title: "Import Borongan",
     desc: "Solusi impor dengan harga terjangkau untuk pengiriman dalam jumlah besar sekaligus.",
     href: "/layanan/import-borongan",
@@ -127,7 +127,7 @@ export default function Services() {
                     <Image
                       src={service.iconSrc}
                       alt={service.title}
-                      width={40}
+                      width={42}
                       height={40}
                       className="object-contain"
                     />
