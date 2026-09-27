@@ -165,13 +165,14 @@ export default function Footer() {
                   />
                 </svg>
                 <a
-                  href="https://maps.app.goo.gl/FXcj4SUrpAWz4HG78?g_st=ic"
+                  href="https://maps.app.goo.gl/f88eqayVSU9xqNKd8"
                   className="hover:text-white transition-colors"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  GRAHA MAKO INNO, Jl. Raya Mabes Hankam No. 26, Bambu Apus,
-                  Cipayung, Jakarta Timur 13890
+                  Komplek Redtop, Jl. Pecenongan Raya No.72 Level 1 Unit D7,
+                  RT.2/RW.4, Kb. Klp., Kecamatan Gambir, Kota Jakarta Pusat,
+                  Daerah Khusus Ibukota Jakarta 10120
                 </a>
               </li>
               <li className="flex gap-3 text-sm text-gray-400">

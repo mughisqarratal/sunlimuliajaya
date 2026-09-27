@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "Profil Perusahaan - Andara Cargo",
+  title: "Profil Perusahaan - Sunli Mulia Jaya",
   description:
     "PT. Sunli Mulia Jaya - Mitra terpercaya layanan import export internasional Anda.",
 };
@@ -12,7 +12,7 @@ const companyStats = [
   {
     imageSrc: "/icons/profile/office-building.png", // Masukkan path ikon kamu di sini
     label: "Kantor",
-    value: "Jakarta Timur",
+    value: "Jakarta Pusat",
   },
   {
     imageSrc: "/icons/profile/calendar.png",
@@ -151,7 +151,7 @@ export default function ProfilPage() {
               </h2>
               <div className="space-y-4 text-gray-600 leading-relaxed">
                 <p>
-                  PT. Andara Megah Logistik adalah perusahaan yang bergerak di
+                  PT. Sunli Mulia Jaya adalah perusahaan yang bergerak di
                   bidang jasa freight forwarding dan custom clearance dengan
                   fokus pada pelayanan impor dan ekspor barang internasional.
                 </p>
@@ -166,7 +166,7 @@ export default function ProfilPage() {
                   berbagai negara dengan efisien dan profesional.
                 </p>
                 <p>
-                  Kantor kami berlokasi di Jakarta Timur, dan kami melayani
+                  Kantor kami berlokasi di Jakarta Pusat, dan kami melayani
                   klien dari seluruh penjuru Indonesia dengan komitmen penuh
                   terhadap kepuasan pelanggan.
                 </p>

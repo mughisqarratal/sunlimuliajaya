@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "Kontak - Andara Cargo",
+  title: "Kontak - Sunli Mulia Jaya",
   description:
-    "Hubungi PT. Andara Megah Logistik untuk konsultasi layanan import export.",
+    "Hubungi PT. Sunli Mulia Jaya untuk konsultasi layanan import export.",
 };
 
 /* =========================================================
@@ -17,20 +17,20 @@ const contactInfo = [
     imageSrc: "/icons/contact/google-maps.png",
     title: "Alamat Kantor",
     content:
-      "GRAHA MAKO INNO, Jl. Raya Mabes Hankam No. 26, Bambu Apus, Cipayung, Jakarta Timur 13890",
-    href: "https://maps.app.goo.gl/FXcj4SUrpAWz4HG78?g_st=ic",
+      "Komplek Redtop, Jl. Pecenongan Raya No.72 Level 1 Unit D7, RT.2/RW.4, Kb. Klp., Kecamatan Gambir, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10120",
+    href: "https://maps.app.goo.gl/f88eqayVSU9xqNKd8",
   },
   {
     imageSrc: "/icons/contact/whatsapp.png",
     title: "WhatsApp / Telepon",
-    content: "+62 813 5656 3676",
-    href: "https://api.whatsapp.com/send?phone=6281356563676",
+    content: "+62 822 4004 1229",
+    href: "https://api.whatsapp.com/send?phone=6282240041229",
   },
   {
     imageSrc: "/icons/contact/gmail.png",
     title: "Email",
-    content: "afifexim@gmail.com",
-    href: "mailto:afifexim@gmail.com",
+    content: "zainal.ptkbt@gmail.com",
+    href: "mailto:zainal.ptkbt@gmail.com",
   },
   {
     imageSrc: "/icons/contact/schedule.png",
@@ -62,8 +62,7 @@ const socialMedia = [
     imageSrc: "/icons/contact/tik-tok.png",
     name: "TikTok",
     href: "https://www.tiktok.com/@andaracargo?_r=1&_t=ZS-99VPe8O0cQm",
-    background:
-      "linear-gradient(135deg, #000000, #ff0050, #ff0050, #000000)",
+    background: "linear-gradient(135deg, #000000, #ff0050, #ff0050, #000000)",
   },
 ];
 
@@ -107,7 +106,6 @@ export default function KontakPage() {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
-
             {/* =================================================
                 CONTACT INFORMATION
             ================================================= */}
@@ -123,7 +121,6 @@ export default function KontakPage() {
               </h2>
 
               <div className="space-y-5">
-
                 {contactInfo.map((info) => {
                   const cardContent = (
                     <>
@@ -296,11 +293,9 @@ export default function KontakPage() {
 
               <div className="bg-white rounded-3xl p-8 border border-gray-200 shadow-sm">
                 <div className="space-y-5">
-
                   {/* NAMA + WHATSAPP */}
 
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
-
                     <div>
                       <label
                         className="block text-sm font-semibold mb-2"
@@ -356,7 +351,6 @@ export default function KontakPage() {
                         "
                       />
                     </div>
-
                   </div>
 
                   {/* EMAIL */}
@@ -487,11 +481,9 @@ export default function KontakPage() {
                   <p className="text-center text-gray-400 text-xs">
                     Pesan akan diarahkan ke WhatsApp kami
                   </p>
-
                 </div>
               </div>
             </div>
-
           </div>
         </div>
       </section>
