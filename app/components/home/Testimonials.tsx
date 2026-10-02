@@ -6,7 +6,7 @@ const testimonials = [
     name: "Budi Santoso",
     role: "Owner - PT Maju Bersama",
     rating: 5,
-    text: "Andara Cargo sangat membantu bisnis import saya. Prosesnya cepat, transparan, dan tim mereka sangat responsif. Highly recommended!",
+    text: "PT. Sunli Mulia Jaya sangat membantu bisnis import saya. Prosesnya cepat, transparan, dan tim mereka sangat responsif. Highly recommended!",
     avatar: "BS",
     color: "#1a3c6e",
   },
@@ -14,7 +14,7 @@ const testimonials = [
     name: "Siti Rahma",
     role: "Procurement Manager",
     rating: 5,
-    text: "Sudah 2 tahun menggunakan jasa Andara Cargo. Tidak pernah ada masalah, selalu on time dan harganya kompetitif. Tim custom clearance-nya profesional.",
+    text: "Sudah 2 tahun menggunakan jasa PT. Sunli Mulia Jaya. Tidak pernah ada masalah, selalu on time dan harganya kompetitif. Tim custom clearance-nya profesional.",
     avatar: "SR",
     color: "#e8a020",
   },
@@ -22,7 +22,7 @@ const testimonials = [
     name: "David Gunawan",
     role: "Importir Elektronik",
     rating: 5,
-    text: "Proses impor elektronik yang biasanya rumit jadi sangat mudah dengan Andara. Pengurusan BPOM dan izin lainnya beres semua tanpa perlu repot.",
+    text: "Proses impor elektronik yang biasanya rumit jadi sangat mudah dengan PT. Sunli Mulia Jaya. Pengurusan BPOM dan izin lainnya beres semua tanpa perlu repot.",
     avatar: "DG",
     color: "#0ea5e9",
   },
@@ -30,7 +30,7 @@ const testimonials = [
     name: "Rina Wijaya",
     role: "Owner - Fashion Brand",
     rating: 5,
-    text: "Impor pakaian dan tekstil jadi lebih mudah. Tim Andara Cargo sangat memahami regulasi dan selalu memberikan solusi terbaik.",
+    text: "Impor pakaian dan tekstil jadi lebih mudah. Tim PT. Sunli Mulia Jaya sangat memahami regulasi dan selalu memberikan solusi terbaik.",
     avatar: "RW",
     color: "#7c3aed",
   },
@@ -38,7 +38,7 @@ const testimonials = [
     name: "Ahmad Fauzi",
     role: "Direktur - CV Konstruksi",
     rating: 5,
-    text: "Layanan impor besi baja dari Andara Cargo sangat memuaskan. Dokumen lengkap, harga bersaing, dan pengiriman tepat waktu.",
+    text: "Layanan impor besi baja dari PT. Sunli Mulia Jaya sangat memuaskan. Dokumen lengkap, harga bersaing, dan pengiriman tepat waktu.",
     avatar: "AF",
     color: "#059669",
   },
@@ -46,7 +46,7 @@ const testimonials = [
     name: "Linda Halim",
     role: "Manager Operasional",
     rating: 5,
-    text: "Pertama kali import langsung dipandu dari awal. Tim Andara sangat sabar menjelaskan proses dan biaya. Sekarang sudah rutin pakai jasa mereka.",
+    text: "Pertama kali import langsung dipandu dari awal. Tim PT. Sunli Mulia Jaya sangat sabar menjelaskan proses dan biaya. Sekarang sudah rutin pakai jasa mereka.",
     avatar: "LH",
     color: "#dc2626",
   },
@@ -223,7 +223,7 @@ export default function Testimonials() {
             onClick={() => { prev(); startTimer(); }}
             aria-label="Previous"
             className="absolute left-0 top-1/2 -translate-y-1/2 z-10 w-11 h-11 rounded-full flex items-center justify-center shadow-lg border border-gray-100 transition-all duration-200 hover:scale-110 cursor-pointer"
-            style={{ background: "var(--primary)" }}
+            style={{ background: "var(--primary-dark)" }}
           >
             <svg className="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
               <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
@@ -235,7 +235,7 @@ export default function Testimonials() {
             onClick={() => { next(); startTimer(); }}
             aria-label="Next"
             className="absolute right-0 top-1/2 -translate-y-1/2 z-10 w-11 h-11 rounded-full flex items-center justify-center shadow-lg border border-gray-100 transition-all duration-200 hover:scale-110 cursor-pointer"
-            style={{ background: "var(--primary)" }}
+            style={{ background: "var(--primary-dark)" }}
           >
             <svg className="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
               <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />

@@ -5,7 +5,7 @@ import Image from "next/image";
 import DoorToDoorFlow from "../../components/services/DoorToDoorFlow";
 
 export const metadata: Metadata = {
-  title: "Door to Door Import - Andara Cargo",
+  title: "Door to Door Import - PT. Sunli Mulia Jaya",
   description:
     "Layanan pengiriman langsung dari pengirim ke penerima tanpa repot mengurus logistik sendiri.",
 };
@@ -178,7 +178,7 @@ export default function Page() {
               </p>
 
               <p>
-                PT. Andara Megah Logistik membantu mengelola proses impor mulai
+                PT. Sunli Mulia Jaya membantu mengelola proses impor mulai
                 dari{" "}
                 <strong>
                   pengambilan barang di negara asal, pengiriman internasional,
@@ -342,13 +342,13 @@ export default function Page() {
             </h3>
 
             <p className="text-blue-200 mb-7 max-w-xl mx-auto">
-              Konsultasikan kebutuhan impor Anda dengan tim PT. Andara Megah
-              Logistik dan dapatkan solusi pengiriman yang sesuai.
+              Konsultasikan kebutuhan impor Anda dengan tim PT. Sunli Mulia Jaya
+              dan dapatkan solusi pengiriman yang sesuai.
             </p>
 
             <div className="flex flex-wrap gap-4 justify-center">
               <a
-                href="https://api.whatsapp.com/send?phone=6281356563676"
+                href="https://api.whatsapp.com/send?phone=6282240041229"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="px-6 py-3 rounded-xl font-bold text-sm transition-all hover:opacity-90"

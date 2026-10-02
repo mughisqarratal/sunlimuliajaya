@@ -634,7 +634,7 @@ export default function RutePage() {
             </p>
 
             <a
-              href="https://api.whatsapp.com/send?phone=6281356563676"
+              href="https://api.whatsapp.com/send?phone=6282240041229"
               target="_blank"
               rel="noopener noreferrer"
               className="

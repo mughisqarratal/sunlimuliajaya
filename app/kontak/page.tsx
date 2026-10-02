@@ -14,26 +14,26 @@ export const metadata: Metadata = {
 
 const contactInfo = [
   {
-    imageSrc: "/icons/contact/google-maps.png",
+    imageSrc: "/icons/contact/map.png",
     title: "Alamat Kantor",
     content:
       "Komplek Redtop, Jl. Pecenongan Raya No.72 Level 1 Unit D7, RT.2/RW.4, Kb. Klp., Kecamatan Gambir, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10120",
     href: "https://maps.app.goo.gl/f88eqayVSU9xqNKd8",
   },
   {
-    imageSrc: "/icons/contact/whatsapp.png",
-    title: "WhatsApp / Telepon",
+    imageSrc: "/icons/contact/telepon.png",
+    title: "WhatsApp",
     content: "+62 822 4004 1229",
     href: "https://api.whatsapp.com/send?phone=6282240041229",
   },
   {
-    imageSrc: "/icons/contact/gmail.png",
+    imageSrc: "/icons/contact/email.png",
     title: "Email",
     content: "zainal.ptkbt@gmail.com",
     href: "mailto:zainal.ptkbt@gmail.com",
   },
   {
-    imageSrc: "/icons/contact/schedule.png",
+    imageSrc: "/icons/contact/jam.png",
     title: "Jam Operasional",
     content:
       "Senin - Sabtu: 08:00 - 17:00 WIB\nMinggu & Hari Libur: Available via WhatsApp",
@@ -48,20 +48,20 @@ const socialMedia = [
   {
     imageSrc: "/icons/contact/linkedin.png",
     name: "LinkedIn",
-    href: "https://www.linkedin.com/in/afif-karami-0aa2b4364?utm_source=share_via&utm_content=profile&utm_medium=member_android",
+    // href: "https://www.linkedin.com/in/afif-karami-0aa2b4364?utm_source=share_via&utm_content=profile&utm_medium=member_android",
     background: "linear-gradient(135deg, #0077B5, #005983)",
   },
   {
     imageSrc: "/icons/contact/instagram.png",
     name: "Instagram",
-    href: "https://www.instagram.com/andaracargo.id?stkn=bDd2bWljb21zaHhn",
+    // href: "https://www.instagram.com/andaracargo.id?stkn=bDd2bWljb21zaHhn",
     background:
       "linear-gradient(135deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888)",
   },
   {
     imageSrc: "/icons/contact/tik-tok.png",
     name: "TikTok",
-    href: "https://www.tiktok.com/@andaracargo?_r=1&_t=ZS-99VPe8O0cQm",
+    // href: "https://www.tiktok.com/@andaracargo?_r=1&_t=ZS-99VPe8O0cQm",
     background: "linear-gradient(135deg, #000000, #ff0050, #ff0050, #000000)",
   },
 ];
@@ -240,7 +240,7 @@ export default function KontakPage() {
                   {socialMedia.map((social) => (
                     <a
                       key={social.name}
-                      href={social.href}
+                      // href={social.href}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="
@@ -454,7 +454,7 @@ export default function KontakPage() {
                   {/* WHATSAPP BUTTON */}
 
                   <a
-                    href="https://api.whatsapp.com/send?phone=6281356563676"
+                    href="https://api.whatsapp.com/send?phone=6282240041229"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="

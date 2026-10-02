@@ -46,16 +46,11 @@ const services = [
 
 export default function Services() {
   return (
-    <section
-      className="py-12"
-      style={{ background: "var(--bg-light)" }}
-    >
+    <section className="py-12" style={{ background: "var(--bg-light)" }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-
         {/* Header */}
 
         <div className="text-center mb-14">
-
           <span
             className="text-sm font-bold tracking-widest uppercase"
             style={{ color: "var(--accent)" }}
@@ -73,25 +68,20 @@ export default function Services() {
           </h2>
 
           <div className="section-divider mx-auto" />
-
         </div>
 
         {/* Cards */}
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-
           {services.map((service) => (
-
             <Link
               key={service.title}
               href={service.href}
               className="relative overflow-hidden rounded-2xl group h-80"
             >
-
               {/* Background */}
 
               {service.bgSrc ? (
-
                 <div
                   className="absolute inset-0 transition-transform duration-500 group-hover:scale-110"
                   style={{
@@ -100,16 +90,13 @@ export default function Services() {
                     backgroundPosition: "center",
                   }}
                 />
-
               ) : (
-
                 <div
                   className="absolute inset-0"
                   style={{
                     background: service.color,
                   }}
                 />
-
               )}
 
               {/* Overlay */}
@@ -119,11 +106,8 @@ export default function Services() {
               {/* Content */}
 
               <div className="relative z-10 h-full flex flex-col justify-between p-7">
-
                 <div>
-
                   <div className="w-16 h-16 rounded-2xl bg-white/20 backdrop-blur-sm flex items-center justify-center mb-6">
-
                     <Image
                       src={service.iconSrc}
                       alt={service.title}
@@ -131,27 +115,19 @@ export default function Services() {
                       height={40}
                       className="object-contain"
                     />
-
                   </div>
 
                   <h3 className="text-2xl font-bold text-white mb-3">
-
                     {service.title}
-
                   </h3>
 
                   <p className="text-white/80 text-sm leading-relaxed">
-
                     {service.desc}
-
                   </p>
-
                 </div>
 
                 <div className="flex items-center gap-2 text-white font-semibold">
-
                   Selengkapnya
-
                   <svg
                     className="w-5 h-5 group-hover:translate-x-1 transition-transform"
                     fill="none"
@@ -165,38 +141,33 @@ export default function Services() {
                       d="M9 5l7 7-7 7"
                     />
                   </svg>
-
                 </div>
-
               </div>
-
             </Link>
-
           ))}
 
           {/* CTA */}
 
           <div
             className="rounded-2xl p-7 flex flex-col justify-between text-white"
-            style={{ background: "var(--primary)" }}
+            style={{ background: "var(--primary-dark)" }}
           >
             <div>
+              <div className="text-4xl mb-4">
+                <Image
+                  src="/icons/message2.png"
+                  alt="CTA Icon"
+                  width={64}
+                  height={64}
+                />
+              </div>
 
-              <div className="text-4xl mb-4">💬</div>
-
-              <h3 className="font-bold text-xl mb-3">
-
-                Butuh Layanan Khusus?
-
-              </h3>
+              <h3 className="font-bold text-xl mb-3">Butuh Layanan Khusus?</h3>
 
               <p className="text-blue-200 text-sm leading-relaxed">
-
                 Konsultasikan kebutuhan pengiriman Anda dengan tim ahli kami
                 secara gratis.
-
               </p>
-
             </div>
 
             <a
@@ -208,11 +179,8 @@ export default function Services() {
             >
               Chat Sekarang
             </a>
-
           </div>
-
         </div>
-
       </div>
     </section>
   );

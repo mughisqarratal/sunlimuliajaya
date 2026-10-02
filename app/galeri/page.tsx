@@ -349,7 +349,7 @@ export default function GaleriPage() {
 
           <p className="text-blue-200 text-lg max-w-2xl mx-auto">
             Dokumentasi kegiatan dan layanan
-            PT. Andara Megah Logistik
+            PT. Sunli Mulia Jaya. 
           </p>
 
         </div>

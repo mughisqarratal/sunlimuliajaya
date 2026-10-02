@@ -182,7 +182,7 @@ export default function FAQ() {
           <p className="mt-4 text-gray-600 text-sm md:text-base leading-relaxed">
             Temukan jawaban atas pertanyaan umum mengenai jasa import,
             pengiriman internasional, customs clearance, dan layanan logistik
-            PT. Andara Megah Logistik.
+            PT. Sunli Mulia Jaya.
           </p>
         </div>
 
@@ -284,7 +284,7 @@ export default function FAQ() {
           </p>
 
           <a
-            href="https://api.whatsapp.com/send?phone=6281356563676"
+            href="https://api.whatsapp.com/send?phone=6282240041229"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-6 py-3 rounded-xl text-sm font-bold text-white transition-all duration-300 hover:scale-105 hover:shadow-lg"

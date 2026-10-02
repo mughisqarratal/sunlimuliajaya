@@ -1,50 +1,60 @@
 "use client";
 
-import {
-  useEffect,
-  useRef,
-  useState,
-  useCallback,
-} from "react";
-import Image from "next/image";
+import { useEffect, useRef, useState, useCallback } from "react";
 
 /* =========================================================
-   WHY US IMAGES
-   Ganti imageSrc sesuai gambar yang kamu upload
+   WHY US CARDS
+   Ganti imageSrc, title, dan description sesuai kebutuhan
 ========================================================= */
 
 const benefits = [
   {
-    imageSrc: "/images/whyus/konsul.png",
-    alt: "Konsultasi Gratis",
+    imageSrc: "/images/whyus/free.jpg",
+    title: "Konsultasi Gratis",
+    description:
+      "Dapatkan konsultasi gratis untuk membantu menemukan solusi import dan ekspor yang sesuai dengan kebutuhan Anda.",
   },
   {
-    imageSrc: "/images/whyus/layanan.png",
-    alt: "Layanan Lengkap",
+    imageSrc: "/images/whyus/layananlengkap.jpg",
+    title: "Layanan Lengkap",
+    description:
+      "Kami menyediakan berbagai layanan import dan ekspor untuk membantu kebutuhan bisnis Anda.",
   },
   {
-    imageSrc: "/images/whyus/mudah.png",
-    alt: "Mudah dan Praktis",
+    imageSrc: "/images/whyus/praktis.jpg",
+    title: "Mudah dan Praktis",
+    description:
+      "Proses yang sederhana dan praktis sehingga Anda dapat menjalankan kebutuhan pengiriman dengan lebih nyaman.",
   },
   {
-    imageSrc: "/images/whyus/transparan.png",
-    alt: "Transparan",
+    imageSrc: "/images/whyus/transparan.jpg",
+    title: "Transparan",
+    description:
+      "Informasi proses dan biaya disampaikan secara transparan sehingga Anda dapat mengetahui setiap tahapnya.",
   },
   {
-    imageSrc: "/images/whyus/solusi.png",
-    alt: "Solusi Izin Import",
+    imageSrc: "/images/whyus/solusiizin.jpg",
+    title: "Solusi Izin Import",
+    description:
+      "Membantu memberikan solusi terkait kebutuhan perizinan dalam proses import barang Anda.",
   },
   {
-    imageSrc: "/images/whyus/izin.png",
-    alt: "Izin Tambahan",
+    imageSrc: "/images/whyus/izintambahan.jpg",
+    title: "Izin Tambahan",
+    description:
+      "Membantu menangani kebutuhan izin tambahan yang diperlukan untuk mendukung proses import.",
   },
   {
-    imageSrc: "/images/whyus/mou.png",
-    alt: "MOU Resmi",
+    imageSrc: "/images/whyus/moubermaterai.jpg",
+    title: "MOU Resmi",
+    description:
+      "Kerja sama yang lebih jelas dan terpercaya dengan dukungan dokumen serta proses yang resmi.",
   },
   {
-    imageSrc: "/images/whyus/jaringan.png",
-    alt: "Jaringan Luas",
+    imageSrc: "/images/whyus/jaringanluas.jpg",
+    title: "Jaringan Luas",
+    description:
+      "Didukung jaringan dan koneksi yang luas untuk membantu kebutuhan pengiriman dan logistik Anda.",
   },
 ];
 
@@ -53,13 +63,12 @@ const benefits = [
 ========================================================= */
 
 // Lebar kartu utama
-// Bisa Anda ubah sesuai kebutuhan
 const CARD_WIDTH = 270;
 
-// Tinggi gambar
+// Tinggi kartu
 const IMAGE_HEIGHT = 320;
 
-// Jarak antar gambar
+// Jarak antar kartu
 const GAP = 10;
 
 // Kecepatan auto slide
@@ -80,8 +89,7 @@ export default function WhyUs() {
      REFS
   ======================================================= */
 
-  const timerRef =
-    useRef<ReturnType<typeof setInterval> | null>(null);
+  const timerRef = useRef<ReturnType<typeof setInterval> | null>(null);
 
   const isPaused = useRef(false);
 
@@ -92,11 +100,7 @@ export default function WhyUs() {
      CLONED DATA
   ======================================================= */
 
-  const cloned = [
-    ...benefits,
-    ...benefits,
-    ...benefits,
-  ];
+  const cloned = [...benefits, ...benefits, ...benefits];
 
   const offset = benefits.length;
 
@@ -130,6 +134,7 @@ export default function WhyUs() {
     if (index >= offset + benefits.length) {
       setAnimated(false);
       setIndex(offset);
+      return;
     }
 
     /*
@@ -207,12 +212,8 @@ export default function WhyUs() {
   ======================================================= */
 
   const onTouchEnd = () => {
-    if (
-      touchStartX.current !== null &&
-      touchEndX.current !== null
-    ) {
-      const diff =
-        touchStartX.current - touchEndX.current;
+    if (touchStartX.current !== null && touchEndX.current !== null) {
+      const diff = touchStartX.current - touchEndX.current;
 
       if (Math.abs(diff) > SWIPE_THRESHOLD) {
         if (diff > 0) {
@@ -235,17 +236,6 @@ export default function WhyUs() {
      CALCULATE POSITION
   ======================================================= */
 
-  /*
-    Setiap slide mempunyai:
-
-    CARD_WIDTH + GAP
-
-    Kemudian track digeser berdasarkan index.
-
-    Karena container dibuat center,
-    gambar aktif akan berada di tengah.
-  */
-
   const translateX = `calc(
     50% - ${CARD_WIDTH / 2}px -
     ${index} * ${CARD_WIDTH + GAP}px
@@ -257,15 +247,12 @@ export default function WhyUs() {
 
   return (
     <section className="py-12 bg-white">
-
       <div className="max-w-7xl mx-auto">
-
         {/* =================================================
             HEADER
         ================================================= */}
 
         <div className="max-w-3xl mx-auto text-center mb-14 px-4 sm:px-6 lg:px-8">
-
           <span
             className="text-sm font-bold tracking-widest uppercase"
             style={{
@@ -289,10 +276,8 @@ export default function WhyUs() {
           <div className="section-divider mx-auto mb-6" />
 
           <p className="text-gray-600 leading-relaxed">
-            Stop berganti jasa Import & Ekspor.
-            Kami hadir memberikan Solusi untuk Anda
-            yang sudah bosan dikecewakan.
-
+            Stop berganti jasa Import & Ekspor. Kami hadir memberikan Solusi
+            untuk Anda yang sudah bosan dikecewakan.
             <strong
               style={{
                 color: "var(--primary)",
@@ -301,10 +286,8 @@ export default function WhyUs() {
               {" "}
               PT. Sunli Mulia Jaya
             </strong>{" "}
-            memberikan Service terbaik untuk
-            meningkatkan keuntungan Anda.
+            memberikan Service terbaik untuk meningkatkan keuntungan Anda.
           </p>
-
         </div>
 
         {/* =================================================
@@ -323,8 +306,9 @@ export default function WhyUs() {
           onTouchMove={onTouchMove}
           onTouchEnd={onTouchEnd}
         >
-
-          {/* LEFT GRADIENT */}
+          {/* =================================================
+              LEFT GRADIENT
+          ================================================= */}
 
           <div
             className="
@@ -344,7 +328,9 @@ export default function WhyUs() {
             }}
           />
 
-          {/* RIGHT GRADIENT */}
+          {/* =================================================
+              RIGHT GRADIENT
+          ================================================= */}
 
           <div
             className="
@@ -364,7 +350,9 @@ export default function WhyUs() {
             }}
           />
 
-          {/* TRACK */}
+          {/* =================================================
+              TRACK
+          ================================================= */}
 
           <div
             className="flex items-center"
@@ -373,52 +361,60 @@ export default function WhyUs() {
 
               transform: `translateX(${translateX})`,
 
+              /*
+                Animasi hanya untuk perpindahan track.
+              */
+
               transition: animated
                 ? "transform 0.65s cubic-bezier(0.25, 0.46, 0.45, 0.94)"
                 : "none",
             }}
             onTransitionEnd={handleTransitionEnd}
           >
-
             {cloned.map((item, i) => {
-
               /*
-                Menentukan apakah gambar ini
-                merupakan gambar yang sedang aktif.
+                Menentukan apakah card ini
+                merupakan card yang sedang aktif.
               */
 
               const isActive = i === index;
 
               return (
                 <div
-                  key={`${item.alt}-${i}`}
+                  key={`${item.title}-${i}`}
                   className="
                     shrink-0
                     relative
-                    transition-all
-                    duration-500
                   "
                   style={{
                     width: `${CARD_WIDTH}px`,
                     height: `${IMAGE_HEIGHT}px`,
 
                     /*
-                      Gambar aktif dibuat lebih besar.
+                      Card aktif dibuat lebih besar.
                     */
 
-                    transform: isActive
-                      ? "scale(1)"
-                      : "scale(0.85)",
+                    transform: isActive ? "scale(1)" : "scale(0.85)",
 
-                    opacity: isActive
-                      ? 1
-                      : 0.55,
+                    opacity: isActive ? 1 : 0.55,
 
                     zIndex: isActive ? 10 : 1,
+
+                    /*
+                      Animasi scale dan opacity.
+                      Ketika animated=false saat reset infinite loop,
+                      animasi card dimatikan sehingga tidak terjadi
+                      efek zoom out -> zoom in.
+                    */
+
+                    transition: animated
+                      ? "transform 0.5s ease, opacity 0.5s ease"
+                      : "none",
                   }}
                 >
-
-                  {/* IMAGE */}
+                  {/* =================================================
+                      CARD
+                  ================================================= */}
 
                   <div
                     className="
@@ -428,54 +424,84 @@ export default function WhyUs() {
                       overflow-hidden
                       rounded
                       shadow
+                      bg-cover
+                      bg-center
                     "
+                    style={{
+                      backgroundImage: `url("${item.imageSrc}")`,
+                    }}
                   >
+                    {/* =================================================
+                        DARK OVERLAY
+                    ================================================= */}
 
-                    <Image
-                      src={item.imageSrc}
-                      alt={item.alt}
-                      fill
-                      sizes="
-                        (max-width: 640px) 82vw,
-                        (max-width: 1024px) 60vw,
-                        420px
+                    <div
+                      className="
+                        absolute
+                        inset-0
+                        bg-black/45
                       "
-                      className={`
-                        object-contain
-                        transition-all
-                        duration-500
-                        ${
-                          isActive
-                            ? "brightness-100"
-                            : "brightness-[0.65]"
-                        }
-                      `}
                     />
 
-                    {/* OVERLAY UNTUK PREVIEW */}
+                    {/* =================================================
+                        CONTENT
+                    ================================================= */}
+
+                    <div
+                      className="
+                        relative
+                        z-10
+                        h-full
+                        flex
+                        flex-col
+                        justify-end
+                        p-6
+                        text-white
+                      "
+                    >
+                      <h3
+                        className="
+                          text-2xl
+                          font-black
+                          leading-tight
+                          mb-3
+                        "
+                      >
+                        {item.title}
+                      </h3>
+
+                      <p
+                        className="
+                          text-sm
+                          leading-relaxed
+                          text-white/90
+                        "
+                      >
+                        {item.description}
+                      </p>
+                    </div>
+
+                    {/* =================================================
+                        PREVIEW OVERLAY
+                    ================================================= */}
 
                     {!isActive && (
                       <div
                         className="
                           absolute
                           inset-0
+                          bg-black/20
                           pointer-events-none
                         "
                       />
                     )}
-
                   </div>
-
                 </div>
               );
             })}
-
           </div>
-
         </div>
-
       </div>
-
     </section>
   );
 }

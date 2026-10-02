@@ -4,9 +4,9 @@ import Image from "next/image";
 import SeaFreightFlow from "../../components/services/SeaFreightFlow";
 
 export const metadata: Metadata = {
-  title: "Sea Freight | PT. Andara Megah Logistik",
+  title: "Sea Freight | PT. Sunli Mulia Jaya",
   description:
-    "Layanan Sea Freight PT. Andara Megah Logistik untuk pengiriman barang melalui jalur laut dengan solusi FCL dan LCL.",
+    "Layanan Sea Freight PT. Sunli Mulia Jaya untuk pengiriman barang melalui jalur laut dengan solusi FCL dan LCL.",
 };
 
 const HERO_DESKTOP_IMAGE = "/images/services/sea.png";
@@ -124,7 +124,7 @@ export default function SeaFreightPage() {
                       pt-22
                     "
             >
-            Sea Freight Service
+              Sea Freight Service
             </h1>
 
             <p
@@ -167,10 +167,10 @@ export default function SeaFreightPage() {
             <p className="text-gray-600 leading-relaxed text-lg">
               Sea Freight merupakan layanan pengiriman barang melalui jalur laut
               yang cocok untuk kebutuhan pengiriman dengan volume atau jumlah
-              barang yang lebih besar. PT. Andara Megah Logistik membantu
-              menangani proses pengiriman mulai dari persiapan barang dan
-              dokumen, proses pengiriman melalui laut, customs clearance, hingga
-              pengiriman menuju lokasi tujuan.
+              barang yang lebih besar. PT. Sunli Mulia Jaya membantu menangani
+              proses pengiriman mulai dari persiapan barang dan dokumen, proses
+              pengiriman melalui laut, customs clearance, hingga pengiriman
+              menuju lokasi tujuan.
             </p>
           </div>
         </div>
@@ -300,34 +300,38 @@ export default function SeaFreightPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-20" style={{ background: "var(--primary-dark)" }}>
-        <div className="max-w-4xl mx-auto px-5 sm:px-8 text-center">
-          <h2 className="text-3xl md:text-4xl font-black text-white mb-5">
-            Butuh Solusi Pengiriman Laut?
-          </h2>
+      <section className="py-20 bg-white">
+        <div className="max-w-6xl mx-auto px-5 sm:px-8 lg:px-12">
+          <div
+            className="rounded-3xl p-8 md:p-12 text-center text-white"
+            style={{ background: "var(--primary)" }}
+          >
+            <h3 className="text-2xl md:text-3xl font-black mb-3">
+              Butuh Solusi Pengiriman Laut?
+            </h3>
 
-          <p className="text-blue-200 text-lg leading-relaxed mb-8">
-            Konsultasikan kebutuhan Sea Freight Anda bersama PT. Andara Megah
-            Logistik.
-          </p>
+            <p className="text-blue-200 mb-7 max-w-xl mx-auto">
+              Konsultasikan kebutuhan Sea Freight Anda bersama PT. Sunli Mulia Jaya.
+            </p>
 
-          <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <a
-              href="https://api.whatsapp.com/send?phone=6281356563676"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="px-6 py-3 rounded-xl font-bold text-sm transition-all hover:opacity-90"
-              style={{ background: "var(--accent)" }}
-            >
-              WhatsApp Sekarang
-            </a>
+            <div className="flex flex-wrap gap-4 justify-center">
+              <a
+                href="https://api.whatsapp.com/send?phone=6282240041229"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-6 py-3 rounded-xl font-bold text-sm transition-all hover:opacity-90"
+                style={{ background: "var(--accent)" }}
+              >
+                WhatsApp Sekarang
+              </a>
 
-            <Link
-              href="/kontak"
-              className="px-6 py-3 rounded-xl font-bold text-sm text-white border border-white/30 transition-all hover:bg-white/10"
-            >
-              Kontak Lainnya
-            </Link>
+              <Link
+                href="/kontak"
+                className="px-6 py-3 rounded-xl font-bold text-sm border-2 border-white/30 hover:bg-white/10 transition-all"
+              >
+                Kontak Lainnya
+              </Link>
+            </div>
           </div>
         </div>
       </section>

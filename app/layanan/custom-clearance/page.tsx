@@ -4,9 +4,9 @@ import Image from "next/image";
 import CustomClearanceFlow from "../../components/services/CustomClearanceFlow";
 
 export const metadata: Metadata = {
-  title: "Custom Clearance | PT. Andara Megah Logistik",
+  title: "Custom Clearance | PT. Sunli Mulia Jaya",
   description:
-    "Layanan Custom Clearance PT. Andara Megah Logistik untuk membantu proses administrasi dan kepabeanan barang impor.",
+    "Layanan Custom Clearance PT. Sunli Mulia Jaya untuk membantu proses administrasi dan kepabeanan barang impor.",
 };
 
 const HERO_DESKTOP_IMAGE = "/images/services/customs.png";
@@ -139,8 +139,8 @@ export default function CustomClearancePage() {
                 drop-shadow-md
               "
             >
-               Solusi pengurusan kepabeanan untuk membantu proses impor berjalan
-            lebih praktis, terarah, dan sesuai ketentuan yang berlaku.
+              Solusi pengurusan kepabeanan untuk membantu proses impor berjalan
+              lebih praktis, terarah, dan sesuai ketentuan yang berlaku.
             </p>
           </div>
         </div>
@@ -167,10 +167,9 @@ export default function CustomClearancePage() {
             <p className="text-gray-600 leading-relaxed text-lg">
               Custom Clearance merupakan proses pengurusan kepabeanan yang
               diperlukan agar barang impor dapat diproses sesuai dengan
-              ketentuan yang berlaku. PT. Andara Megah Logistik membantu
-              menangani proses administrasi dan koordinasi kepabeanan sehingga
-              customer dapat menjalankan proses impor dengan lebih praktis dan
-              terarah.
+              ketentuan yang berlaku. PT. Sunli Mulia Jaya membantu menangani
+              proses administrasi dan koordinasi kepabeanan sehingga customer
+              dapat menjalankan proses impor dengan lebih praktis dan terarah.
             </p>
           </div>
         </div>
@@ -302,34 +301,39 @@ export default function CustomClearancePage() {
       </section>
 
       {/* CTA */}
-      <section className="py-20" style={{ background: "var(--primary-dark)" }}>
-        <div className="max-w-4xl mx-auto px-5 sm:px-8 text-center">
-          <h2 className="text-3xl md:text-4xl font-black text-white mb-5">
-            Butuh Bantuan Customs Clearance?
-          </h2>
+      <section className="py-20 bg-white">
+        <div className="max-w-6xl mx-auto px-5 sm:px-8 lg:px-12">
+          <div
+            className="rounded-3xl p-8 md:p-12 text-center text-white"
+            style={{ background: "var(--primary)" }}
+          >
+            <h3 className="text-2xl md:text-3xl font-black mb-3">
+              Butuh Bantuan Customs Clearance?
+            </h3>
 
-          <p className="text-blue-200 text-lg leading-relaxed mb-8">
-            Konsultasikan kebutuhan kepabeanan dan proses impor Anda bersama PT.
-            Andara Megah Logistik.
-          </p>
+            <p className="text-blue-200 mb-7 max-w-xl mx-auto">
+              Konsultasikan kebutuhan kepabeanan dan proses impor Anda bersama
+              PT. Sunli Mulia Jaya.
+            </p>
 
-          <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <a
-              href="https://api.whatsapp.com/send?phone=6281356563676"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="px-6 py-3 rounded-xl font-bold text-sm transition-all hover:opacity-90"
-              style={{ background: "var(--accent)" }}
-            >
-              WhatsApp Sekarang
-            </a>
+            <div className="flex flex-wrap gap-4 justify-center">
+              <a
+                href="https://api.whatsapp.com/send?phone=6282240041229"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-6 py-3 rounded-xl font-bold text-sm transition-all hover:opacity-90"
+                style={{ background: "var(--accent)" }}
+              >
+                WhatsApp Sekarang
+              </a>
 
-            <Link
-              href="/kontak"
-              className="px-6 py-3 rounded-xl font-bold text-sm text-white border border-white/30 transition-all hover:bg-white/10"
-            >
-              Kontak Lainnya
-            </Link>
+              <Link
+                href="/kontak"
+                className="px-6 py-3 rounded-xl font-bold text-sm border-2 border-white/30 hover:bg-white/10 transition-all"
+              >
+                Kontak Lainnya
+              </Link>
+            </div>
           </div>
         </div>
       </section>

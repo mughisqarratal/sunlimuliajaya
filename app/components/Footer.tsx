@@ -27,7 +27,7 @@ export default function Footer() {
             </p>
             <div className="flex gap-3 items-center justify-center">
               <a
-                href="https://www.facebook.com/share/15q3hGGKPv/"
+                // href="https://www.facebook.com/share/15q3hGGKPv/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-9 h-9 rounded-lg bg-white/10 hover:bg-blue-600 flex items-center justify-center transition-colors"
@@ -41,7 +41,7 @@ export default function Footer() {
                 </svg>
               </a>
               <a
-                href="https://www.instagram.com/jasa_import.express"
+                // href="https://www.instagram.com/jasa_import.express"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-9 h-9 rounded-lg bg-white/10 hover:bg-pink-600 flex items-center justify-center transition-colors"

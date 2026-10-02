@@ -10,9 +10,9 @@ const industries = [
     iconEmoji: null,
     title: "Besi Baja",
     short: "Import untuk Industri & Konstruksi",
-    desc: "PT Andara Megah Logistik dapat membantu dalam proses impor besi dan baja dengan mengurus PI Besi Baja dan menyelesaikan proses impor lainnya. Dengan demikian, kami dapat membantu pelanggan dalam mengimpor besi dan baja dengan lebih mudah dan efisien.",
+    desc: "PT. Sunli Mulia Jaya dapat membantu dalam proses impor besi dan baja dengan mengurus PI Besi Baja dan menyelesaikan proses impor lainnya. Dengan demikian, kami dapat membantu pelanggan dalam mengimpor besi dan baja dengan lebih mudah dan efisien.",
     bgSrc: "/images/besibaja.jpg",
-    backColor: "#FF6700",
+    backColor: "var(--primary-dark)",
   },
   {
     id: "elektronik",
@@ -20,9 +20,9 @@ const industries = [
     iconEmoji: null,
     title: "Elektronik",
     short: "Smartphone, Laptop, TV & Peralatan Elektronik",
-    desc: "PT. Andara Megah Logistik melayani impor produk elektronik seperti smartphone, laptop, tablet, televisi, serta perangkat elektronik lainnya untuk kebutuhan bisnis maupun distribusi.",
+    desc: "PT. Sunli Mulia Jaya melayani impor produk elektronik seperti smartphone, laptop, tablet, televisi, serta perangkat elektronik lainnya untuk kebutuhan bisnis maupun distribusi.",
     bgSrc: "/images/elektronik.jpg",
-    backColor: "#FF6700",
+    backColor: "var(--primary-dark)",
   },
   {
     id: "otomotif",
@@ -32,7 +32,7 @@ const industries = [
     short: "Mobil, Motor & Suku Cadang",
     desc: "Kami melayani kebutuhan impor kendaraan bermotor seperti mobil, motor, serta suku cadang dari berbagai merek dan negara asal, termasuk pengurusan PPnBM dan sertifikasi kendaraan.",
     bgSrc: "/images/otomotif.jpg",
-    backColor: "#FF6700",
+    backColor: "var(--primary-dark)",
   },
   {
     id: "pakaian",
@@ -40,9 +40,9 @@ const industries = [
     iconEmoji: null,
     title: "Pakaian & Tekstil",
     short: "Pakaian, Sepatu, Tas & Bahan Tekstil",
-    desc: "PT. Andara Megah Logistik mendukung industri fashion dan manufaktur dengan layanan impor pakaian jadi, sepatu, tas, hingga bahan tekstil sesuai regulasi Indonesia.",
+    desc: "PT. Sunli Mulia Jaya mendukung industri fashion dan manufaktur dengan layanan impor pakaian jadi, sepatu, tas, hingga bahan tekstil sesuai regulasi Indonesia.",
     bgSrc: "/images/pakaian.jpg",
-    backColor: "#FF6700",
+    backColor: "var(--primary-dark)",
   },
   {
     id: "makanan",
@@ -52,7 +52,7 @@ const industries = [
     short: "Produk Pangan Import",
     desc: "Kami memiliki pengalaman menangani impor berbagai produk makanan dan minuman, mencakup pengurusan sertifikasi BPOM, SPPB, serta proses karantina dan izin lainnya.",
     bgSrc: "/images/makanan.jpg",
-    backColor: "#FF6700",
+    backColor: "var(--primary-dark)",
   },
   {
     id: "mesin",
@@ -62,7 +62,7 @@ const industries = [
     short: "Mesin Industri & Peralatan Konstruksi",
     desc: "Kami menyediakan solusi impor untuk mesin industri, peralatan produksi, alat berat, dan peralatan teknis lainnya, termasuk pengiriman langsung ke lokasi proyek.",
     bgSrc: "/images/mesin.jpg",
-    backColor: "#FF6700",
+    backColor: "var(--primary-dark)",
   },
   {
     id: "furnitur",
@@ -72,7 +72,7 @@ const industries = [
     short: "Furnitur, Dekorasi Rumah & Perlengkapan",
     desc: "Layanan ini meliputi impor furnitur rumah tangga, dekorasi interior, hingga perlengkapan hotel & kantor dari berbagai negara dengan penanganan ekstra hati-hati.",
     bgSrc: "/images/furniture.jpg",
-    backColor: "#FF6700",
+    backColor: "var(--primary-dark)",
   },
   {
     id: "bahan-baku",
@@ -80,9 +80,9 @@ const industries = [
     iconEmoji: null,
     title: "Bahan Baku",
     short: "Bahan Kimia, Logam & Plastik",
-    desc: "PT. Andara Megah Logistik melayani impor berbagai bahan baku industri, seperti bahan kimia, logam, plastik, karet, dan tekstil industri dengan dokumentasi MSDS lengkap.",
+    desc: "PT. Sunli Mulia Jaya melayani impor berbagai bahan baku industri, seperti bahan kimia, logam, plastik, karet, dan tekstil industri dengan dokumentasi MSDS lengkap.",
     bgSrc: "/images/bahanbaku.jpg",
-    backColor: "#FF6700",
+    backColor: "var(--primary-dark)",
   },
 ];
 
