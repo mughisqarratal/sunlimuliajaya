@@ -211,7 +211,7 @@ export default function Industries() {
             Industri
           </span>
           <h2
-            className="text-4xl font-black mt-2 mb-3"
+            className="text-3xl font-black mt-2 mb-3"
             style={{ color: "var(--primary)" }}
           >
             Apapun Industri Anda

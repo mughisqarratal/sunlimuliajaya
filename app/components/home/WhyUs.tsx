@@ -263,7 +263,7 @@ export default function WhyUs() {
           </span>
 
           <h2
-            className="text-4xl font-black mt-2 mb-4"
+            className="text-3xl font-black mt-2 mb-4"
             style={{
               color: "var(--primary)",
             }}

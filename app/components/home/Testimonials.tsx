@@ -157,7 +157,7 @@ export default function Testimonials() {
           >
             Testimoni
           </span>
-          <h2 className="text-4xl font-black mt-2 mb-3" style={{ color: "var(--primary)" }}>
+          <h2 className="text-3xl font-black mt-2 mb-3" style={{ color: "var(--primary)" }}>
             Apa Kata Klien Kami
           </h2>
           <div className="section-divider mx-auto" />

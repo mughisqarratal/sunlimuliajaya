@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import Reveal from "../Reveal";
 
 const heroImages = [
   {
@@ -104,9 +105,7 @@ export default function Hero() {
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-28 pb-24 w-full">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-          {/* =========================
-              LEFT CONTENT
-          ========================== */}
+          {/* =========================LEFT CONTENT ========================== */}
           <div>
             <div
               className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-semibold mb-6"
@@ -121,11 +120,12 @@ export default function Hero() {
               />
               PT. Sunli Mulia Jaya
             </div>
-
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-black text-white leading-tight mb-6">
-              Import Export{" "}
-              <span style={{ color: "var(--accent)" }}>Global</span> Solution
-            </h1>
+            <Reveal direction="right" distance={60} duration={1800} delay={200}>
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-black text-white leading-tight mb-6">
+                Import Export{" "}
+                <span style={{ color: "var(--accent)" }}>Global</span> Solution
+              </h1>
+            </Reveal>
 
             <p className="text-gray-300 text-lg leading-relaxed mb-8 max-w-xl">
               Kami menyediakan layanan import-export yang cepat, aman, dan
@@ -144,6 +144,7 @@ export default function Hero() {
             </div>
 
             {/* Feature pills */}
+            <Reveal direction="up" distance={60} duration={1800} delay={200}>
             <div className="grid grid-cols-2 gap-3">
               {heroIcons.map((item) => (
                 <div
@@ -167,16 +168,18 @@ export default function Hero() {
                 </div>
               ))}
             </div>
+            </Reveal>
           </div>
 
           {/* =========================
               RIGHT IMAGE CAROUSEL
           ========================== */}
-          <div className="w-full">
-            <div className="relative w-full max-w-xl mx-auto">
-              {/* Image */}
-              <div className="relative aspect-4/3 overflow-hidden rounded-3xl shadow-2xl border border-white/10">
-                {heroImages.map((image, index) => (
+          <Reveal direction="left" distance={60} duration={1800} delay={200}>
+            <div className="w-full">
+              <div className="relative w-full max-w-xl mx-auto">
+                {/* Image */}
+                <div className="relative aspect-4/3 overflow-hidden rounded-3xl shadow-2xl border border-white/10">
+                  {heroImages.map((image, index) => (
                   <Image
                     key={image.src}
                     src={image.src}
@@ -232,6 +235,7 @@ export default function Hero() {
               </div>
             </div>
           </div>
+          </Reveal>
         </div>
       </div>
 

@@ -1,6 +1,7 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
+import Reveal from "../Reveal";
 
 function CountUp({ end, duration = 2000 }: { end: number; duration?: number }) {
   const [count, setCount] = useState(0);
@@ -64,20 +65,25 @@ const stats = [
 
 export default function Stats() {
   return (
-    <section className="py-16 bg-white">
+    <section className="py-15 pt-10 pb-10 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-10">
-          <span className="text-sm font-bold tracking-widest uppercase" style={{color: "var(--accent)"}}>Project Success</span>
-          <h2 className="text-3xl font-black mt-2" style={{color: "var(--primary)"}}>Pencapaian Kami</h2>
+          <Reveal direction="up" distance={60} duration={1800} delay={200}>
+            <span className="text-sm font-bold tracking-widest uppercase" style={{color: "var(--accent)"}}>Project Success</span>
+          </Reveal>
+          <Reveal direction="down" distance={60} duration={1800} delay={200}>
+            <h2 className="text-3xl font-black mt-2" style={{color: "var(--primary)"}}>Pencapaian Kami</h2>
+          </Reveal>
         </div>
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
+        <Reveal direction="scale" distance={60} duration={1800} delay={200}>
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-5">
           {stats.map((stat) => (
             <div
               key={stat.label}
-              className="text-center p-6 rounded-2xl border-2 hover:border-blue-200 transition-all hover:shadow-lg group"
+              className="text-center p-5 rounded-2xl border-2 hover:border-blue-200 transition-all hover:shadow-lg group"
               style={{borderColor: "#e5e7eb"}}
             >
-              <div className="text-4xl mb-3 group-hover:scale-110 transition-transform">
+              <div className="text-2xl mb-3 group-hover:scale-110 transition-transform">
                 <Image src={stat.imageSrc} alt={stat.label} width={60} height={60} className="mx-auto" />
               </div>
               <div className="text-3xl font-black mb-1" style={{color: "var(--primary)"}}>
@@ -89,6 +95,7 @@ export default function Stats() {
             </div>
           ))}
         </div>
+        </Reveal>
       </div>
     </section>
   );
