@@ -2,30 +2,29 @@ import type { Metadata } from "next";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "Profil Perusahaan - Sunli Mulia Jaya",
+  title: "Profil Perusahaan - PT. Sunli Mulia Jaya",
   description:
     "PT. Sunli Mulia Jaya - Mitra terpercaya layanan import export internasional Anda.",
 };
 
-// Data Statistik / Info Singkat Perusahaan
 const companyStats = [
   {
-    imageSrc: "/icons/profile/office-building.png", // Masukkan path ikon kamu di sini
+    imageSrc: "/icons/profile/company.png", 
     label: "Kantor",
     value: "Jakarta Pusat",
   },
   {
-    imageSrc: "/icons/profile/calendar.png",
+    imageSrc: "/icons/profile/calendar2.png",
     label: "Tahun Pengalaman",
     value: "15+",
   },
   {
-    imageSrc: "/icons/profile/countries.png",
+    imageSrc: "/icons/profile/global.png",
     label: "Jangkauan",
     value: "Worldwide",
   },
   {
-    imageSrc: "/icons/profile/experts.png",
+    imageSrc: "/icons/profile/qualification.png",
     icon: null,
     label: "Tim",
     value: "Profesional",
@@ -37,56 +36,53 @@ const team = [
   {
     name: "Tim Import",
     role: "Dept Import",
-    imageSrc: "/icons/profile/team-management.png", // Path ikon kustom
+    imageSrc: "/icons/profile/team1.png", 
     emoji: null,
     desc: "Berpengalaman di bidang logistik dan kepabeanan internasional.",
   },
   {
     name: "Tim Operasional",
     role: "Manager Operasional",
-    imageSrc: "/icons/profile/team-management.png",
+    imageSrc: "/icons/profile/team1.png",
     emoji: null,
     desc: "Mengelola dan memastikan kelancaran setiap proses pengiriman.",
   },
   {
     name: "Tim Custom",
     role: "Custom Clearance Specialist",
-    imageSrc: "/icons/profile/team-management.png",
-    emoji: "📋",
+    imageSrc: "/icons/profile/team1.png",
+    emoji: null,
     desc: "Ahli dalam pengurusan dokumen kepabeanan dan perizinan impor.",
   },
   {
     name: "Tim Customer Service",
     role: "CS & Relasi Klien",
-    imageSrc: "/icons/profile/support.png",
-    emoji: "🤝",
+    imageSrc: "/icons/profile/cs.png",
+    emoji: null,
     desc: "Siap membantu klien 24 jam dalam bahasa Indonesia.",
   },
 ];
 
-// Data Nilai-Nilai Perusahaan
+
 const values = [
   {
-    imageSrc: "/icons/profile/experts.png",
-    icon: "⭐",
+    imageSrc: "/icons/profile/qualification.png",
     title: "Profesionalisme",
     desc: "Kami menjalankan setiap layanan dengan standar profesional tertinggi.",
   },
   {
-    imageSrc: "/icons/profile/transparency.png",
-    icon: "🔍",
+    imageSrc: "/icons/profile/transparency2.png",
     title: "Transparansi",
     desc: "Semua biaya dan proses disampaikan secara terbuka kepada klien.",
   },
   {
-    imageSrc: "/icons/profile/relationship.png",
-    icon: "🤝",
+    imageSrc: "/icons/profile/trade.png",
+    icon: null,
     title: "Kepercayaan",
     desc: "Membangun hubungan jangka panjang berbasis kepercayaan.",
   },
   {
-    imageSrc: "/icons/profile/innovation.png",
-    icon: "🚀",
+    imageSrc: "/icons/profile/innovation2.png",
     title: "Inovasi",
     desc: "Terus berinovasi untuk memberikan solusi logistik terbaik.",
   },
@@ -94,13 +90,13 @@ const values = [
 
 const vision = [
   {
-    imageSrc: "/icons/profile/vision.png",
+    imageSrc: "/icons/profile/vision2.png",
     icon: null,
     title: "Visi",
     desc: "Menjadi mitra logistik terdepan di Indonesia dengan memberikan layanan yang unggul dan inovatif.",
   },
   {
-    imageSrc: "/icons/profile/mission.png",
+    imageSrc: "/icons/profile/mission2.png",
     icon: null,
     title: "Misi",
     desc: "Meningkatkan kualitas layanan logistik untuk mendukung pertumbuhan bisnis klien kami secara berkelanjutan.",

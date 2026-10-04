@@ -4,7 +4,7 @@ import Reveal from "../Reveal";
 
 const services = [
   {
-    iconSrc: "/icons/door.png",
+    iconSrc: "/icons/door-to-door.png",
     title: "Door to Door Import",
     desc: "Layanan pengiriman langsung dari gudang pengirim ke tangan penerima tanpa repot urus logistik.",
     href: "/layanan/door-to-door",
@@ -12,7 +12,7 @@ const services = [
     bgSrc: "/images/services/doortodoor.png",
   },
   {
-    iconSrc: "/icons/custom.png",
+    iconSrc: "/icons/customnew.png",
     title: "Custom Clearance",
     desc: "Pengurusan bea cukai secara profesional dan cepat untuk kelancaran proses impor barang Anda.",
     href: "/layanan/custom-clearance",

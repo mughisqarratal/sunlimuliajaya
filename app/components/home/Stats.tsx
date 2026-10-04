@@ -49,7 +49,7 @@ const stats = [
   },
   {
     label: "Door to Door",
-    imageSrc: "/icons/door.png",
+    imageSrc: "/icons/door-to-door.png",
     value: 6200,
     suffix: "+",
     desc: "Pengiriman selesai",

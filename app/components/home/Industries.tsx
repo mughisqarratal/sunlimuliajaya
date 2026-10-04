@@ -76,7 +76,7 @@ const industries = [
   },
   {
     id: "bahan-baku",
-    iconSrc: "/icons/industries/bahan.png",
+    iconSrc: "/icons/industries/rawnew.png",
     iconEmoji: null,
     title: "Bahan Baku",
     short: "Bahan Kimia, Logam & Plastik",
