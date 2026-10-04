@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "Kontak - Sunli Mulia Jaya",
+  title: "Kontak - PT. Sunli Mulia Jaya",
   description:
     "Hubungi PT. Sunli Mulia Jaya untuk konsultasi layanan import export.",
 };
@@ -48,22 +48,22 @@ const socialMedia = [
   {
     imageSrc: "/icons/contact/linkedin.png",
     name: "LinkedIn",
-    // href: "https://www.linkedin.com/in/afif-karami-0aa2b4364?utm_source=share_via&utm_content=profile&utm_medium=member_android",
-    background: "linear-gradient(135deg, #0077B5, #005983)",
+    href: "https://www.linkedin.com/in/zainal-arifin-34ba20276?utm_source=share_via&utm_content=profile&utm_medium=member_android",
+    // background: "linear-gradient(135deg, #0077B5, #005983)",
   },
-  {
-    imageSrc: "/icons/contact/instagram.png",
-    name: "Instagram",
-    // href: "https://www.instagram.com/andaracargo.id?stkn=bDd2bWljb21zaHhn",
-    background:
-      "linear-gradient(135deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888)",
-  },
-  {
-    imageSrc: "/icons/contact/tik-tok.png",
-    name: "TikTok",
-    // href: "https://www.tiktok.com/@andaracargo?_r=1&_t=ZS-99VPe8O0cQm",
-    background: "linear-gradient(135deg, #000000, #ff0050, #ff0050, #000000)",
-  },
+  // {
+  //   imageSrc: "/icons/contact/instagram.png",
+  //   name: "Instagram",
+  //   href: "https://www.instagram.com/andaracargo.id?stkn=bDd2bWljb21zaHhn",
+  //   background:
+  //     "linear-gradient(135deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888)",
+  // },
+  // {
+  //   imageSrc: "/icons/contact/tik-tok.png",
+  //   name: "TikTok",
+  //   href: "https://www.tiktok.com/@andaracargo?_r=1&_t=ZS-99VPe8O0cQm",
+  //   background: "linear-gradient(135deg, #000000, #ff0050, #ff0050, #000000)",
+  // },
 ];
 
 export default function KontakPage() {
@@ -240,7 +240,7 @@ export default function KontakPage() {
                   {socialMedia.map((social) => (
                     <a
                       key={social.name}
-                      // href={social.href}
+                      href={social.href}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="
@@ -249,18 +249,21 @@ export default function KontakPage() {
                         gap-2
                         px-4
                         py-2.5
+                        border
                         rounded-xl
+                        border-gray-200
+                        hover:shadow-lg
                         text-sm
                         font-semibold
-                        text-white
+                        text-[#0a66c2]
                         transition-all
-                        hover:opacity-90
-                        hover:scale-105
+                        hover:opacity-100
+                        hover:scale-100
                         cursor-pointer
                       "
-                      style={{
-                        background: social.background,
-                      }}
+                      // style={{
+                      //   background: social.background,
+                      // }}
                     >
                       <Image
                         src={social.imageSrc}

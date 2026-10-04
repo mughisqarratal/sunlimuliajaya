@@ -25,7 +25,7 @@ export default function Footer() {
             <p className="text-gray-400 text-sm leading-relaxed mb-5">
               "Import Export Global Solution"
             </p>
-            <div className="flex gap-3 items-center justify-center">
+            {/* <div className="flex gap-3 items-center justify-center">
               <a
                 // href="https://www.facebook.com/share/15q3hGGKPv/"
                 target="_blank"
@@ -73,7 +73,7 @@ export default function Footer() {
                   <circle cx="17.5" cy="6.5" r="1" fill="currentColor" />
                 </svg>
               </a>
-            </div>
+            </div> */}
           </div>
 
           {/* Menu */}
@@ -92,7 +92,7 @@ export default function Footer() {
                 <li key={item.href}>
                   <Link
                     href={item.href}
-                    className="text-gray-400 hover:text-white text-sm transition-colors flex items-center gap-2"
+                    className="text-gray-400 hover:text-white transform hover:translate-x-1 text-sm transition-colors flex items-center gap-2"
                   >
                     <span
                       className="w-1.5 h-1.5 rounded-full"
@@ -124,7 +124,7 @@ export default function Footer() {
                 <li key={item.href}>
                   <Link
                     href={item.href}
-                    className="text-gray-400 hover:text-white text-sm transition-colors flex items-center gap-2"
+                    className="text-gray-400 hover:text-white hover:translate-x-1 text-sm transition-colors flex items-center gap-2"
                   >
                     <span
                       className="w-1.5 h-1.5 rounded-full"

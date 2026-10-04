@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import Reveal from "../Reveal";
 
 const services = [
   {
@@ -51,13 +52,16 @@ export default function Services() {
         {/* Header */}
 
         <div className="text-center mb-14">
+          <Reveal direction="up" distance={60} duration={1800} delay={200}>
           <span
             className="text-sm font-bold tracking-widest uppercase"
             style={{ color: "var(--accent)" }}
           >
             Layanan Kami
           </span>
+          </Reveal>
 
+          <Reveal direction="down" distance={60} duration={1800} delay={200}>
           <h2
             className="text-3xl font-black mt-2 mb-4"
             style={{ color: "var(--primary)" }}
@@ -66,7 +70,7 @@ export default function Services() {
             <br />
             Sesuai Kebutuhan Anda
           </h2>
-
+          </Reveal>
           <div className="section-divider mx-auto" />
         </div>
 
