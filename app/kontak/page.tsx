@@ -51,19 +51,19 @@ const socialMedia = [
     href: "https://www.linkedin.com/in/zainal-arifin-34ba20276?utm_source=share_via&utm_content=profile&utm_medium=member_android",
     // background: "linear-gradient(135deg, #0077B5, #005983)",
   },
-  // {
-  //   imageSrc: "/icons/contact/instagram.png",
-  //   name: "Instagram",
-  //   href: "https://www.instagram.com/andaracargo.id?stkn=bDd2bWljb21zaHhn",
-  //   background:
-  //     "linear-gradient(135deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888)",
-  // },
-  // {
-  //   imageSrc: "/icons/contact/tik-tok.png",
-  //   name: "TikTok",
-  //   href: "https://www.tiktok.com/@andaracargo?_r=1&_t=ZS-99VPe8O0cQm",
-  //   background: "linear-gradient(135deg, #000000, #ff0050, #ff0050, #000000)",
-  // },
+  {
+    imageSrc: "/icons/contact/instagram.png",
+    name: "Instagram",
+    href: "https://www.instagram.com/pt_kharisma029?stkn=MXJldmw3eWZ6MW0zMw%3D%3D&utm_source=qr",
+    // background:
+    //   "linear-gradient(135deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888)",
+  },
+  {
+    imageSrc: "/icons/contact/facebook.png",
+    name: "Facebook",
+    href: "https://www.facebook.com/share/14qE8TTQ3Xn/?mibextid=wwXIfr",
+    // background: "linear-gradient(135deg, #1877F2, #1877F2)",
+  },
 ];
 
 export default function KontakPage() {
@@ -247,7 +247,7 @@ export default function KontakPage() {
                         flex
                         items-center
                         gap-2
-                        px-4
+                        px-3
                         py-2.5
                         border
                         rounded-xl

@@ -25,9 +25,9 @@ export default function Footer() {
             <p className="text-gray-400 text-sm leading-relaxed mb-5">
               "Import Export Global Solution"
             </p>
-            {/* <div className="flex gap-3 items-center justify-center">
+            <div className="flex gap-3 items-center justify-center">
               <a
-                // href="https://www.facebook.com/share/15q3hGGKPv/"
+                href="https://www.facebook.com/share/14qE8TTQ3Xn/?mibextid=wwXIfr"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-9 h-9 rounded-lg bg-white/10 hover:bg-blue-600 flex items-center justify-center transition-colors"
@@ -41,7 +41,7 @@ export default function Footer() {
                 </svg>
               </a>
               <a
-                // href="https://www.instagram.com/jasa_import.express"
+                href="https://www.instagram.com/pt_kharisma029?stkn=MXJldmw3eWZ6MW0zMw%3D%3D&utm_source=qr"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-9 h-9 rounded-lg bg-white/10 hover:bg-pink-600 flex items-center justify-center transition-colors"
@@ -73,7 +73,7 @@ export default function Footer() {
                   <circle cx="17.5" cy="6.5" r="1" fill="currentColor" />
                 </svg>
               </a>
-            </div> */}
+            </div>
           </div>
 
           {/* Menu */}
