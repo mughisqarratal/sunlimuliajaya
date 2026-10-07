@@ -38,7 +38,7 @@ export default function WhatsAppFloat() {
   }, [isOpen]);
 
   const openWhatsApp = (phone: string) => {
-    const message = "Halo, saya ingin bertanya tentang layanan Andara Cargo";
+    const message = "Halo, saya ingin bertanya tentang layanan di PT. Sunli Mulia Jaya.";
 
     const url = `https://api.whatsapp.com/send?phone=${phone}&text=${encodeURIComponent(
       message,
