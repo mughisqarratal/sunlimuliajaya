@@ -7,16 +7,20 @@ interface PageTransitionProps {
   children: React.ReactNode;
 }
 
-export default function PageTransition({ children }: PageTransitionProps) {
+export default function PageTransition({
+  children,
+}: PageTransitionProps) {
   const pathname = usePathname();
 
   useEffect(() => {
-    // Pastikan halaman selalu kembali terlihat
-    document.body.classList.remove("page-exit");
+    const main = document.querySelector("main");
 
-    // Jalankan animasi masuk setelah browser melakukan paint
+    if (!main) return;
+
+    main.classList.remove("page-loaded");
+
     const frame = requestAnimationFrame(() => {
-      document.body.classList.add("page-loaded");
+      main.classList.add("page-loaded");
     });
 
     return () => {
