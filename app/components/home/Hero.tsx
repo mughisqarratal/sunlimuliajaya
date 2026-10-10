@@ -154,6 +154,7 @@ export default function Hero() {
                 >
                   <Image
                     src={item.icon}
+                    unoptimized
                     alt={item.label}
                     width={40}
                     height={40}

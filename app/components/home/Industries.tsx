@@ -128,6 +128,7 @@ function FlipCard({ item }: { item: Industry }) {
               {item.iconSrc ? (
                 <Image
                   src={item.iconSrc}
+                  unoptimized
                   alt={item.title}
                   width={52}
                   height={52}

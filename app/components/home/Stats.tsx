@@ -84,7 +84,7 @@ export default function Stats() {
               style={{borderColor: "#e5e7eb"}}
             >
               <div className="text-2xl mb-3 group-hover:scale-110 transition-transform">
-                <Image src={stat.imageSrc} alt={stat.label} width={60} height={60} className="mx-auto" />
+                <Image src={stat.imageSrc} alt={stat.label} width={60} height={60} className="mx-auto" unoptimized />
               </div>
               <div className="text-3xl font-black mb-1" style={{color: "var(--primary)"}}>
                 <CountUp end={stat.value} />

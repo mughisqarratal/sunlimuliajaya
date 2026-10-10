@@ -180,6 +180,7 @@ export default function ProfilPage() {
                     {item.imageSrc ? (
                       <Image
                         src={item.imageSrc}
+                        unoptimized
                         alt={item.label}
                         width={48}
                         height={48}
@@ -215,6 +216,7 @@ export default function ProfilPage() {
                 {vision[0].imageSrc ? (
                   <Image
                     src={vision[0].imageSrc}
+                    unoptimized
                     alt={vision[0].title}
                     width={52}
                     height={52}
@@ -244,6 +246,7 @@ export default function ProfilPage() {
                 {vision[1].imageSrc ? (
                   <Image
                     src={vision[1].imageSrc}
+                    unoptimized
                     alt={vision[1].title}
                     width={48}
                     height={48}
@@ -299,6 +302,7 @@ export default function ProfilPage() {
                   {v.imageSrc ? (
                     <Image
                       src={v.imageSrc}
+                      unoptimized
                       alt={v.title}
                       width={50}
                       height={50}
@@ -346,6 +350,7 @@ export default function ProfilPage() {
                   {t.imageSrc ? (
                     <Image
                       src={t.imageSrc}
+                      unoptimized
                       alt={t.name}
                       width={48}
                       height={48}

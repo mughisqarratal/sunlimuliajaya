@@ -114,6 +114,7 @@ export default function Services() {
                   <div className="w-16 h-16 rounded-2xl bg-white/20 backdrop-blur-sm flex items-center justify-center mb-6">
                     <Image
                       src={service.iconSrc}
+                      unoptimized
                       alt={service.title}
                       width={42}
                       height={40}
@@ -160,6 +161,7 @@ export default function Services() {
               <div className="text-4xl mb-4">
                 <Image
                   src="/icons/message2.png"
+                  unoptimized
                   alt="CTA Icon"
                   width={64}
                   height={64}

@@ -252,6 +252,7 @@ export default function Navbar() {
           >
             <Image
               src={mobileOpen ? MOBILE_CLOSE_ICON : MOBILE_MENU_ICON}
+              unoptimized
               alt={mobileOpen ? "Close Menu" : "Menu"}
               width={MOBILE_ICON_SIZE}
               height={MOBILE_ICON_SIZE}

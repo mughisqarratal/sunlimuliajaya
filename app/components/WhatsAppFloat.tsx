@@ -142,6 +142,7 @@ export default function WhatsAppFloat() {
               >
                 <Image
                   src="/icons/contact/user.png"
+                  unoptimized
                   alt={contact.name}
                   width={50}
                   height={50}

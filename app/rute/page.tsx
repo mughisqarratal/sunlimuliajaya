@@ -330,6 +330,7 @@ export default function RutePage() {
                 <div className="flex justify-center mb-3">
                   <Image
                     src={stat.imageSrc}
+                    unoptimized
                     alt={stat.label}
                     width={48}
                     height={48}
@@ -505,6 +506,7 @@ export default function RutePage() {
                       <div className="shrink-0 flex items-center justify-center">
                         <Image
                           src={route.transitIcon}
+                          unoptimized
                           alt="Transit"
                           width={route.transitIconSize}
                           height={route.transitIconSize}
@@ -551,6 +553,7 @@ export default function RutePage() {
                       <div className="shrink-0 flex items-center justify-center">
                         <Image
                           src={route.typeIcon}
+                          unoptimized
                           alt="Shipping type"
                           width={route.typeIconSize}
                           height={route.typeIconSize}

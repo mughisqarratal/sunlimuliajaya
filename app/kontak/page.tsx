@@ -142,6 +142,7 @@ export default function KontakPage() {
                       >
                         <Image
                           src={info.imageSrc}
+                          unoptimized
                           alt={info.title}
                           width={28}
                           height={28}
@@ -267,6 +268,7 @@ export default function KontakPage() {
                     >
                       <Image
                         src={social.imageSrc}
+                        unoptimized
                         alt={social.name}
                         width={20}
                         height={20}
