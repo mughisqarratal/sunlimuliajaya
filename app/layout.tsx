@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "./components/Navbar";
+import Navbar2 from "./components/Navbar2";
 import Footer from "./components/Footer";
 import WhatsAppFloat from "./components/WhatsAppFloat";
 import PageTransition from "./components/PageTransition";
@@ -41,7 +42,7 @@ export default function RootLayout({
       </head>
 
       <body>
-        <Navbar />
+        <Navbar2 />
 
         <PageTransition>
           <main>{children}</main>
