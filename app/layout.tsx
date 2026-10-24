@@ -42,7 +42,7 @@ export default function RootLayout({
       </head>
 
       <body>
-        <Navbar2 />
+        <Navbar/>
 
         <PageTransition>
           <main>{children}</main>

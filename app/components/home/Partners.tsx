@@ -1,4 +1,5 @@
 "use client";
+import Reveal from "../Reveal";
 
 import {
   useEffect,
@@ -232,6 +233,7 @@ export default function Partners() {
         background: "var(--bg-light)",
       }}
     >
+      <Reveal direction="up" distance={60} duration={1800} delay={200}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
         {/* =================================================
@@ -345,6 +347,7 @@ export default function Partners() {
         </div>
 
       </div>
+      </Reveal>
     </section>
   );
 }
