@@ -1,9 +1,9 @@
 export default function CTA() {
   return (
-    <section className="py-20" style={{background: "var(--primary)"}}>
+    <section className="py-10" style={{background: "var(--primary)"}}>
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <span className="text-sm font-bold tracking-widest uppercase" style={{color: "var(--accent)"}}>Mulai Sekarang</span>
-        <h2 className="text-4xl font-black text-white mt-3 mb-5">
+        <h2 className="text-3xl font-black text-white mt-3 mb-5">
           Siap Memulai Import Export<br />yang Lebih Mudah?
         </h2>
         <p className="text-blue-200 text-lg mb-10 max-w-2xl mx-auto">

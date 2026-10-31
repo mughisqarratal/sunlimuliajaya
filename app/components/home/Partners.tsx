@@ -228,7 +228,7 @@ export default function Partners() {
 
   return (
     <section
-      className="py-15"
+      className="py-10"
       style={{
         background: "var(--bg-light)",
       }}

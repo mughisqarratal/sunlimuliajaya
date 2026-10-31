@@ -147,7 +147,7 @@ export default function CustomClearancePage() {
       </section>
 
       {/* TENTANG LAYANAN */}
-      <section className="py-20 bg-white">
+      <section className="py-10 bg-white">
         <div className="max-w-6xl mx-auto px-5 sm:px-8 lg:px-12">
           <div className="max-w-3xl">
             <span
@@ -176,7 +176,7 @@ export default function CustomClearancePage() {
       </section>
 
       {/* LAYANAN KAMI */}
-      <section className="py-20 bg-(--bg-light)">
+      <section className="py-10 bg-(--bg-light)">
         <div className="max-w-6xl mx-auto px-5 sm:px-8 lg:px-12">
           <div className="text-center max-w-3xl mx-auto mb-12">
             <span
@@ -221,7 +221,7 @@ export default function CustomClearancePage() {
       </section>
 
       {/* ALUR PROSES */}
-      <section className="py-20 bg-white">
+      <section className="py-10 bg-white">
         <div className="max-w-6xl mx-auto px-5 sm:px-8 lg:px-12">
           <div className="max-w-3xl mb-10">
             <span
@@ -250,7 +250,7 @@ export default function CustomClearancePage() {
       </section>
 
       {/* KEUNGGULAN */}
-      <section className="py-20 bg-(--bg-light)">
+      <section className="py-10 bg-(--bg-light)">
         <div className="max-w-6xl mx-auto px-5 sm:px-8 lg:px-12">
           <div className="text-center max-w-3xl mx-auto mb-12">
             <span
@@ -301,7 +301,7 @@ export default function CustomClearancePage() {
       </section>
 
       {/* CTA */}
-      <section className="py-20 bg-white">
+      <section className="py-10 bg-white">
         <div className="max-w-6xl mx-auto px-5 sm:px-8 lg:px-12">
           <div
             className="rounded-3xl p-8 md:p-12 text-center text-white"

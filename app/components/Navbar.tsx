@@ -28,56 +28,46 @@ const layananMenu = [
   },
 ];
 
-/* =========================================================
-   MOBILE ICON
-   Ganti path sesuai icon milik kamu
-========================================================= */
-
 const MOBILE_MENU_ICON = "/icons/navbar/open-menu.png";
 const MOBILE_CLOSE_ICON = "/icons/navbar/cross-button.png";
-
-/* Ukuran icon mobile - silakan ubah */
 const MOBILE_ICON_SIZE = 28;
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
   const [layananOpen, setLayananOpen] = useState(false);
+  const [mobileLayananOpen, setMobileLayananOpen] = useState(false);
 
   const pathname = usePathname();
 
-  /* =========================================================
-     SCROLL
-  ========================================================= */
-
   useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 20);
+    const onScroll = () => {
+      const isScrolled = window.scrollY > 20;
+      setScrolled((prev) => (prev !== isScrolled ? isScrolled : prev));
+    };
 
-    window.addEventListener("scroll", onScroll);
-
+    window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  /* =========================================================
-     ACTIVE MENU
-  ========================================================= */
-
   const isActive = (href: string) => pathname === href;
-
   const isLayananActive = pathname.startsWith("/layanan");
+
+  // Fungsi khusus untuk menutup semua menu mobile sekaligus
+  const closeAllMobileMenus = () => {
+    setMobileOpen(false);
+    setMobileLayananOpen(false);
+  };
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled ? "bg-white navbar-scrolled" : "bg-white/95 backdrop-blur-sm"
+      className={`fixed top-0 left-0 right-0 z-50 transition-colors duration-300 ${
+        scrolled ? "bg-white navbar-scrolled shadow-sm" : "bg-white/95 md:backdrop-blur-sm"
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-1">
         <div className="flex items-center justify-between h-20">
-          {/* =================================================
-              LOGO
-          ================================================= */}
-
+          {/* ================= LOGO ================= */}
           <Link href="/" className="flex items-center">
             <Image
               src="/images/sunlimullogo2.png"
@@ -89,13 +79,8 @@ export default function Navbar() {
             />
           </Link>
 
-          {/* =================================================
-              DESKTOP MENU
-          ================================================= */}
-
+          {/* ================= DESKTOP MENU ================= */}
           <div className="hidden lg:flex items-center gap-1">
-            {/* HOME + PROFIL */}
-
             {[
               { label: "Home", href: "/" },
               { label: "Profil", href: "/profil" },
@@ -116,20 +101,15 @@ export default function Navbar() {
               </Link>
             ))}
 
-            {/* =================================================
-                LAYANAN DROPDOWN
-            ================================================= */}
-
+            {/* LAYANAN DROPDOWN DESKTOP */}
             <div
-              className="relative"
+              className="relative py-2"
               onMouseEnter={() => setLayananOpen(true)}
               onMouseLeave={() => setLayananOpen(false)}
             >
-              {/* LAYANAN BUTTON */}
-
               <button
                 type="button"
-                className={`px-4 py-2 rounded-full text-sm font-semibold transition-all duration-300 flex items-center gap-1 ${
+                className={`px-4 py-2 rounded-full text-sm font-semibold transition-all duration-300 flex items-center gap-1 cursor-pointer ${
                   layananOpen || isLayananActive
                     ? "text-white"
                     : "text-gray-700 hover:text-white hover:bg-blue-800"
@@ -141,7 +121,6 @@ export default function Navbar() {
                 }
               >
                 Layanan
-                {/* ARROW */}
                 <svg
                   className={`w-4 h-4 transition-transform duration-300 ${
                     layananOpen ? "rotate-180" : ""
@@ -159,22 +138,16 @@ export default function Navbar() {
                 </svg>
               </button>
 
-              {/* =================================================
-                  DROPDOWN
-                  Smooth animation
-              ================================================= */}
-
               <div
-                className={`absolute top-full left-0 mt-1 w-56 z-50 transition-all duration-300 ease-out ${
+                className={`absolute top-full left-0 w-56 z-50 transition-all duration-200 ease-out ${
                   layananOpen
                     ? "opacity-100 translate-y-0 visible"
                     : "opacity-0 -translate-y-2 invisible pointer-events-none"
                 }`}
               >
-                <div className="bg-white rounded-xl shadow-2xl border border-gray-100 py-2 overflow-hidden">
+                <div className="bg-white rounded-xl shadow-2xl border border-gray-100 py-2 overflow-hidden mt-1">
                   {layananMenu.map((item) => {
                     const active = pathname === item.href;
-
                     return (
                       <Link
                         key={item.href}
@@ -185,11 +158,7 @@ export default function Navbar() {
                             : "text-gray-700 hover:text-white hover:bg-blue-800"
                         }`}
                         style={
-                          active
-                            ? {
-                                background: "var(--primary)",
-                              }
-                            : {}
+                          active ? { background: "var(--primary)" } : {}
                         }
                       >
                         {item.label}
@@ -199,10 +168,6 @@ export default function Navbar() {
                 </div>
               </div>
             </div>
-
-            {/* =================================================
-                RUTE + GALERI + KONTAK
-            ================================================= */}
 
             {[
               { label: "Rute", href: "/rute" },
@@ -225,10 +190,6 @@ export default function Navbar() {
               </Link>
             ))}
 
-            {/* =================================================
-                HUBUNGI KAMI
-            ================================================= */}
-
             <a
               href="https://api.whatsapp.com/send?phone=6282240041229"
               target="_blank"
@@ -239,43 +200,133 @@ export default function Navbar() {
             </a>
           </div>
 
-          {/* =================================================
-              MOBILE MENU BUTTON
-              Icon bisa kamu ganti sendiri
-          ================================================= */}
-
+          {/* ================= MOBILE MENU BUTTON ================= */}
           <button
             type="button"
             aria-label={mobileOpen ? "Tutup menu" : "Buka menu"}
-            className="lg:hidden p-2 rounded-lg cursor-pointer"
-            onClick={() => setMobileOpen(!mobileOpen)}
+            className="lg:hidden p-2 rounded-lg cursor-pointer relative w-11 h-11 flex items-center justify-center"
+            onClick={() => {
+              // Jika menu ditutup via tombol silang, reset juga state layanan mobile
+              if (mobileOpen) {
+                closeAllMobileMenus();
+              } else {
+                setMobileOpen(true);
+              }
+            }}
           >
             <Image
-              src={mobileOpen ? MOBILE_CLOSE_ICON : MOBILE_MENU_ICON}
+              src={MOBILE_MENU_ICON}
               unoptimized
-              alt={mobileOpen ? "Close Menu" : "Menu"}
+              alt="Menu"
               width={MOBILE_ICON_SIZE}
               height={MOBILE_ICON_SIZE}
-              className="object-contain"
+              className={`object-contain transition-all duration-200 absolute ${
+                mobileOpen ? "opacity-0 scale-75 pointer-events-none" : "opacity-100 scale-100"
+              }`}
+            />
+            <Image
+              src={MOBILE_CLOSE_ICON}
+              unoptimized
+              alt="Close Menu"
+              width={MOBILE_ICON_SIZE}
+              height={MOBILE_ICON_SIZE}
+              className={`object-contain transition-all duration-200 absolute ${
+                mobileOpen ? "opacity-100 scale-100" : "opacity-0 scale-75 pointer-events-none"
+              }`}
             />
           </button>
         </div>
 
-        {/* =====================================================
-            MOBILE MENU
-        ===================================================== */}
-
+        {/* ================= MOBILE MENU DROPDOWN ================= */}
         <div
-          className={`lg:hidden overflow-hidden transition-all duration-700 ease-in-out ${
-            mobileOpen ? "max-h-150 opacity-100" : "max-h-0 opacity-0"
+          className={`lg:hidden pt-3 overflow-hidden transition-all duration-700 ease-in-out ${
+            mobileOpen ? "max-h-150 opacity-100 py-2" : "max-h-0 opacity-0 py-0"
           }`}
         >
-          <div className="bg-white border-t border-gray-100 py-4 space-y-1">
-            {/* HOME */}
-
+          <div className="bg-white space-y-1 pt-2 rounded-lg">
             {[
               { label: "Home", href: "/" },
               { label: "Profil", href: "/profil" },
+            ].map((item) => (
+              <Link
+                key={item.href}
+                href={item.href}
+                className={`block px-4 py-2 rounded-lg text-sm font-semibold transition-all ${
+                  isActive(item.href)
+                    ? "text-white"
+                    : "text-gray-700 hover:bg-gray-100"
+                }`}
+                style={
+                  isActive(item.href) ? { background: "var(--primary)" } : {}
+                }
+                onClick={closeAllMobileMenus} // Reset semua saat diklik
+              >
+                {item.label}
+              </Link>
+            ))}
+
+            {/* ================= LAYANAN ACCORDION MOBILE ================= */}
+            <div>
+              <button
+                type="button"
+                onClick={() => setMobileLayananOpen(!mobileLayananOpen)}
+                className={`w-full flex items-center justify-between px-4 py-2 rounded-lg text-sm font-semibold transition-all ${
+                  isLayananActive ? "text-white" : "text-gray-700 hover:bg-gray-50"
+                }`}
+                style={
+                  isLayananActive ? { background: "var(--primary)" } : {}
+                }
+              >
+                <span>Layanan</span>
+                <svg
+                  className={`w-4 h-4 transition-transform duration-300 ${
+                    mobileLayananOpen ? "rotate-90" : ""
+                  }`}
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M9 5l7 7-7 7"
+                  />
+                </svg>
+              </button>
+
+              {/* Submenu Layanan di Mobile */}
+              <div
+                className={`overflow-hidden transition-all duration-700 ease-in-out ${
+                  mobileLayananOpen ? "max-h-96 opacity-100 py-1" : "max-h-0 opacity-0 py-0"
+                }`}
+              >
+                <div className="pl-4 pr-2 space-y-1 bg-gray-50/50 rounded-lg mt-1">
+                  {layananMenu.map((item) => {
+                    const active = pathname === item.href;
+                    return (
+                      <Link
+                        key={item.href}
+                        href={item.href}
+                        className={`block px-4 py-2 text-sm rounded-md transition-all ${
+                          active
+                            ? "text-white font-medium"
+                            : "text-gray-600 hover:bg-gray-100"
+                        }`}
+                        style={
+                          active ? { background: "var(--primary)" } : {}
+                        }
+                        onClick={closeAllMobileMenus} // Reset semua saat sub menu dipilih
+                      >
+                        {item.label}
+                      </Link>
+                    );
+                  })}
+                </div>
+              </div>
+            </div>
+
+            {[
               { label: "Rute", href: "/rute" },
               { label: "Galeri", href: "/galeri" },
               { label: "Kontak", href: "/kontak" },
@@ -283,49 +334,15 @@ export default function Navbar() {
               <Link
                 key={item.href}
                 href={item.href}
-                className={`block px-4 py-2.5 rounded-lg text-sm font-semibold transition-all ${
+                className={`block px-4 py-2 rounded-lg text-sm font-semibold transition-all ${
                   isActive(item.href)
                     ? "text-white"
                     : "text-gray-700 hover:bg-gray-50"
                 }`}
                 style={
-                  isActive(item.href)
-                    ? {
-                        background: "var(--primary)",
-                      }
-                    : {}
+                  isActive(item.href) ? { background: "var(--primary)" } : {}
                 }
-                onClick={() => setMobileOpen(false)}
-              >
-                {item.label}
-              </Link>
-            ))}
-
-            {/* =================================================
-                LAYANAN MOBILE
-            ================================================= */}
-
-            <div className="px-4 pt-3 pb-2 font-semibold text-sm text-gray-500">
-              Layanan
-            </div>
-
-            {layananMenu.map((item) => (
-              <Link
-                key={item.href}
-                href={item.href}
-                className={`block px-8 py-2 text-sm transition-all ${
-                  pathname === item.href
-                    ? "text-white rounded-lg"
-                    : "text-gray-600 hover:bg-gray-50"
-                }`}
-                style={
-                  pathname === item.href
-                    ? {
-                        background: "var(--primary)",
-                      }
-                    : {}
-                }
-                onClick={() => setMobileOpen(false)}
+                onClick={closeAllMobileMenus} // Reset semua saat Galeri/menu lain diklik
               >
                 {item.label}
               </Link>

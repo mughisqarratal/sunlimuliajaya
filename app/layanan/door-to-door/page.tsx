@@ -150,7 +150,7 @@ export default function Page() {
       {/* =========================
           ABOUT
       ========================== */}
-      <section className="py-20 bg-white">
+      <section className="py-10 bg-white">
         <div className="max-w-6xl mx-auto px-5 sm:px-8 lg:px-12">
           <div
             className="p-7 md:p-10 rounded-3xl"
@@ -200,7 +200,7 @@ export default function Page() {
       {/* =========================
           FLOW
       ========================== */}
-      <section className="py-20" style={{ background: "var(--bg-light)" }}>
+      <section className="py-10" style={{ background: "var(--bg-light)" }}>
         <div className="max-w-6xl mx-auto px-5 sm:px-8 lg:px-12">
           <div className="text-center mb-12">
             <span
@@ -230,7 +230,7 @@ export default function Page() {
       {/* =========================
           WHAT WE HANDLE
       ========================== */}
-      <section className="py-20 bg-white">
+      <section className="py-10 bg-white">
         <div className="max-w-6xl mx-auto px-5 sm:px-8 lg:px-12">
           <div className="text-center mb-12">
             <span
@@ -281,7 +281,7 @@ export default function Page() {
       {/* =========================
           BENEFITS
       ========================== */}
-      <section className="py-20" style={{ background: "var(--bg-light)" }}>
+      <section className="py-10" style={{ background: "var(--bg-light)" }}>
         <div className="max-w-6xl mx-auto px-5 sm:px-8 lg:px-12">
           <div className="text-center mb-12">
             <span
